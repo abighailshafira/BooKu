@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
 body{
 	background-color: #f4f1de;
 	font-family: 'Poppins', sans-serif;
@@ -140,13 +147,7 @@ body{
     --dec-color:#3d405b;
     --hover-color:rgba(255, 255, 255, 0.418);
 }
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
-}
+
 .skip-link {
     position: absolute;
     top: -40px;
@@ -254,7 +255,7 @@ body{
     height: 45px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/profile.png);
+    background-image: url("../public/images/profile-img.jpg");
     border-radius: 50%;
 }
 .profile h4{
