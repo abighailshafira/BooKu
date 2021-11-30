@@ -147,7 +147,7 @@ button{
   justify-content: center;
 }
 
-/* styling dashboard*/
+/*skip-link*/
 .skip-link {
   position: absolute;
   top: -40px;
@@ -162,6 +162,7 @@ button{
   top: 0;
 }
 
+/*side-bar*/
 .sidebar {
   height: 100%;
   width: 240px;
@@ -183,7 +184,8 @@ button{
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 0rem 1.5rem;
+  padding: 1rem;
+  margin-top: 5px;
 }
 
 .sidebar-header label{
@@ -196,6 +198,10 @@ button{
   background-color: var(--hover-color);
 }
 
+.sidebar-header .navbar-brand{
+  color: white;
+}
+
 .sidebar-menu ul{
   padding: 18px;
 }
@@ -203,7 +209,6 @@ button{
 .sidebar-menu ul li {
   padding: 14px ;
   margin-bottom: 10px;
-  letter-spacing: .1rem;
 }
 
 .sidebar-menu ul li a{
@@ -224,7 +229,7 @@ button{
   width: 70px;
 }
 
-#sidebar-toggle:checked ~ .sidebar .sidebar-header h3,
+#sidebar-toggle:checked ~ .sidebar .sidebar-header .navbar-brand,
 #sidebar-toggle:checked ~ .sidebar .sidebar-menu li span:last-child{
   display: none;
 }
@@ -233,13 +238,6 @@ button{
   padding-left: 9px;
 }
 
-#sidebar-toggle:checked ~ .main-content {
-  margin-left: 70px;
-}
-
-#sidebar-toggle:checked ~ .main-content header {
-  left: 70px;
-}
 
 #sidebar-toggle:checked ~ .sidebar .sidebar-header,
 #sidebar-toggle:checked ~ .sidebar .sidebar-menu ul li
@@ -251,13 +249,22 @@ button{
   padding: 6px;
 }
 
-.main-content {
+#sidebar-toggle:checked ~ main {
+  margin-left: 70px;
+}
+
+#sidebar-toggle:checked ~ main navigation-bar {
+  left: 70px;
+}
+
+/*main-content*/
+main {
   position: relative;
   margin-left: 240px;
   transition: margin-left 300ms;
 }
 
-.main-content header{
+main navigation-bar{
   position: sticky;
   top: 0;
   z-index: 100;
@@ -290,11 +297,10 @@ button{
   padding-top: 10px;
 }
 
-main {
+.main-content {
   overflow-x: hidden;
   padding:2rem 1rem 1rem 1rem;
   min-height: 90vh;
-  background: var(--main-color);
 }
 
 /*modal logout*/
