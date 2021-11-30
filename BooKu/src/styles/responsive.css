@@ -13,7 +13,7 @@
     .sidebar .sidebar-menu ul li a{
         padding-left: 9px;
     }
-    .main-content {
+    main {
         margin-left: 70px;
     }
     .profile{
@@ -52,7 +52,7 @@
     .sidebar .sidebar-menu ul li a{
         padding-left: 0px;
     }
-    .main-content {
+    main {
         margin-left: 50px;
     }
     .profile a{
@@ -70,7 +70,7 @@
     .sidebar .sidebar-menu ul{
         padding: 0px;
     }
-    .main-content header {
+    main .navigation-bar {
         height: 3rem;
     }
     #sidebar-toggle:checked ~ .sidebar {
@@ -83,10 +83,10 @@
     #sidebar-toggle:checked ~ .sidebar .sidebar-menu ul li a{
         padding-left: 0px;
     }
-    #sidebar-toggle:checked ~ .main-content {
+    #sidebar-toggle:checked ~ main {
         margin-left: 50px;
     }
-    #sidebar-toggle:checked ~ .main-content header {
+    #sidebar-toggle:checked ~ main .navigation-bar {
         left: 50px;
     }
 
