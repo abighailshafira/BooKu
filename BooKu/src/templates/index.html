@@ -20,15 +20,17 @@
   </head>
 
   <body>
-    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
-    
+    <skip-to-content></skip-to-content>
+
     <input type="checkbox" id="sidebar-toggle" />
     <div class="sidebar">
       <div class="sidebar-header">
-        <h3 class="brand">
-          <span class="unlink"></span>
-          <span>BooKu</span>
-        </h3>
+        <!-- <h3 class="brand"> -->
+          <!-- <span class="unlink"></span> -->
+        <div class="navbar">
+          <a class="navbar-brand" href="index.html">B<span>oo</span>Ku</a>
+        </div>
+        <!-- </h3> -->
         <label class="bi bi-list-ul" for="sidebar-toggle"></label>
       </div>
 
@@ -62,19 +64,14 @@
       </div>
     </div>
 
-    <div class="main-content">
-      <header>
-        <div class="profile">
-          <a href=""></a>
-          <p>dicoding</p>
-        </div>
-      </header>
+    <main>
+      <navigation-bar></navigation-bar>
 
-      <main></main>
-    </div>
+      <div class="main-content"></div>
+    </main>
 
     <!-- Modal -->
-    <div class="modal" id="myModal">
+    <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
