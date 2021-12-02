@@ -97,7 +97,7 @@ body{
   color: grey;
 }
 
-button{
+button[type="submit"]{
   margin-top: 10px;
   border: none;
   cursor: pointer;
@@ -114,6 +114,7 @@ button{
 
 .form-box button[type="submit"]:hover{
   background-color: #666c99;
+  color: white;
 }
 
 .link{
@@ -249,22 +250,22 @@ button{
   padding: 6px;
 }
 
-#sidebar-toggle:checked ~ main {
+#sidebar-toggle:checked ~ .main {
   margin-left: 70px;
 }
 
-#sidebar-toggle:checked ~ main navigation-bar {
+#sidebar-toggle:checked ~ .main navigation-bar {
   left: 70px;
 }
 
 /*main-content*/
-main {
+.main {
   position: relative;
   margin-left: 240px;
   transition: margin-left 300ms;
 }
 
-main navigation-bar{
+.main navigation-bar{
   position: sticky;
   top: 0;
   z-index: 100;
@@ -276,14 +277,14 @@ main navigation-bar{
   transition: left 300ms;
 }
 
-.profile {
+.user {
   display: flex;
   align-items: center;
   margin-right: 3rem;
   margin-left: auto;
 }
 
-.profile a{
+.user a{
   width: 40px;
   height: 40px;
   background-size: cover;
@@ -292,7 +293,7 @@ main navigation-bar{
   border-radius: 50%;
 }
 
-.profile p{
+.user p{
   padding-left: 16px;
   padding-top: 10px;
 }
@@ -317,4 +318,9 @@ main navigation-bar{
   border: 2px solid #3d405b;
   border-radius: 5px;
   width: 100%;
+  letter-spacing: .1rem;
+  padding: 12px;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 14px;
 }

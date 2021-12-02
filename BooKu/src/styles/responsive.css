@@ -3,44 +3,56 @@
         width: 70px;
         z-index: 150;
     }
+
     .sidebar-header{
         padding-right: 6px;
     }
-    .sidebar .sidebar-header h3,
+
+    .sidebar .sidebar-header .navbar-brand,
     .sidebar .sidebar-menu li span:last-child{
         display: none;
     }
+
     .sidebar .sidebar-menu ul li a{
         padding-left: 9px;
     }
-    main {
+
+    .navbar-brand{
+        font-size: 20px;
+    }
+
+    .main {
         margin-left: 70px;
     }
-    .profile{
+
+    .user{
         margin-right: 1rem ;
-    } 
-    .profile a{
+    }
+
+    .user a{
         width: 35px;
         height: 35px;
     }
-    .profile h4{
-        font-size: 18px;
-    }
+
     .sidebar .sidebar-header,
     .sidebar .sidebar-menu ul li
     {
         padding-left: 10px;
     }
+
     .sidebar .sidebar-menu ul{
         padding: 6px;
     }
+
     #sidebar-toggle:checked ~ .sidebar {
         width: 150px;
     }
-    #sidebar-toggle:checked ~ .sidebar .sidebar-header h3,
+
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header .navbar-brand,
     #sidebar-toggle:checked ~ .sidebar .sidebar-menu li span:last-child{
         display: inline;
     }
+
     #sidebar-toggle:checked ~ .sidebar .sidebar-menu ul li a{
         padding-left: 6px;
     }
@@ -49,45 +61,56 @@
     .sidebar {
         width: 50px;
     }
+
     .sidebar .sidebar-menu ul li a{
         padding-left: 0px;
     }
-    main {
+
+    .main {
         margin-left: 50px;
     }
-    .profile a{
+
+    .user a{
         width: 35px;
         height: 35px;
     }
+
     .sidebar .sidebar-header
     {
         padding-left: 0px;
     }
+
     .sidebar .sidebar-menu ul li
     {
         padding-left: 16px;
     }
+
     .sidebar .sidebar-menu ul{
         padding: 0px;
     }
-    main .navigation-bar {
+
+    .main .navigation-bar {
         height: 3rem;
     }
+
     #sidebar-toggle:checked ~ .sidebar {
         width: 150px;
     }
-    #sidebar-toggle:checked ~ .sidebar .sidebar-header h3,
+
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header .navbar-brand,
     #sidebar-toggle:checked ~ .sidebar .sidebar-menu li span:last-child{
         display: inline;
     }
+
     #sidebar-toggle:checked ~ .sidebar .sidebar-menu ul li a{
         padding-left: 0px;
     }
-    #sidebar-toggle:checked ~ main {
+
+    #sidebar-toggle:checked ~ .main {
         margin-left: 50px;
     }
-    #sidebar-toggle:checked ~ main .navigation-bar {
+
+    #sidebar-toggle:checked ~ .main .navigation-bar {
         left: 50px;
     }
-
 }
