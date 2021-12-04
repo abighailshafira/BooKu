@@ -4,13 +4,13 @@
         z-index: 150;
     }
 
-    .sidebar-header{
-        padding-right: 6px;
-    }
-
     .sidebar .sidebar-header .navbar-brand,
     .sidebar .sidebar-menu li span:last-child{
         display: none;
+    }
+    .sidebar .sidebar-header
+    {
+        padding-left: 8px;
     }
 
     .sidebar .sidebar-menu ul li a{
@@ -33,15 +33,11 @@
         width: 35px;
         height: 35px;
     }
-
-    .sidebar .sidebar-header,
-    .sidebar .sidebar-menu ul li
-    {
-        padding-left: 10px;
-    }
-
-    .sidebar .sidebar-menu ul{
+    .sidebar-menu ul{
         padding: 6px;
+    }
+    .sidebar-menu span{
+        margin-right: 0;
     }
 
     #sidebar-toggle:checked ~ .sidebar {
