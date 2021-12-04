@@ -191,7 +191,7 @@ button[type="submit"]{
 
 .sidebar-header label{
   font-size: 22px;
-  padding: 7px 14px;
+  padding: 10px 18px;
   border-radius: 5px;
 }
 
@@ -210,6 +210,7 @@ button[type="submit"]{
 .sidebar-menu ul li {
   padding: 14px ;
   margin-bottom: 10px;
+  letter-spacing: .1rem;
 }
 
 .sidebar-menu ul li a{
@@ -238,14 +239,16 @@ button[type="submit"]{
 #sidebar-toggle:checked ~ .sidebar .sidebar-menu ul li a{
   padding-left: 9px;
 }
-
-
-#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar .sidebar-header{
+  padding-left: 7px;
+}
 #sidebar-toggle:checked ~ .sidebar .sidebar-menu ul li
 {
   padding-left: 10px;
 }
-
+#sidebar-toggle:checked ~ .sidebar .sidebar-menu span{
+  margin-right: 0;
+}
 #sidebar-toggle:checked ~ .sidebar .sidebar-menu ul{
   padding: 6px;
 }
@@ -302,6 +305,58 @@ button[type="submit"]{
   overflow-x: hidden;
   padding:2rem 1rem 1rem 1rem;
   min-height: 90vh;
+}
+
+/* content Home Page*/
+.home-content {
+  overflow-x: hidden;
+  padding:2rem;
+  min-height: 90vh;
+  background: var(--main-color);
+}
+.card-footer a{
+  text-decoration: none;
+  color: white;
+}
+.card-total{
+  background-color: #989BF2 ;
+}
+.card-pengeluaran{
+  background-color: #F3838F;
+}
+.card-pemasukan{
+  background-color: #86C77C  ;
+}
+#ChartTotal{
+  margin-top: 50px;
+}
+
+/* content Input Page*/
+.input-content{
+  padding: 1rem;
+}
+.input-container{
+  background-color: white;
+  margin: 2rem 10rem;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
+  border-radius: 5px;
+  min-height: 45px;
+  min-width: 44px
+}
+.input-content button{
+  width: 100%;
+}
+.input-content button[type="submit"]:hover{
+  background-color: #666c99;
+}
+.table-wrapper{
+  height: 80vh;
+  padding: 0rem 3rem;
+}
+.table-title{
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 /*modal logout*/
