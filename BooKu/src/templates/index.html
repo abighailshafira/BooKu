@@ -13,9 +13,18 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" 
+      href="https://cdn.datatables.net/select/1.3.3/css/select.bootstrap5.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>BooKu</title>
   </head>
 
@@ -28,43 +37,42 @@
         <div class="navbar">
           <a class="navbar-brand" href="index.html">B<span>oo</span>Ku</a>
         </div>
-        <label class="bi bi-list-ul" for="sidebar-toggle"></label>
+        <label class=" fa fa-bars" for="sidebar-toggle"></label>
       </div>
 
-      <div class="sidebar-menu">
+      <div class="sidebar-menu" id="navigationMenu">
         <ul>
           <li>
-            <a href="">
-              <span class="bi bi-house"></span>
+            <a href="#/home">
+              <span class="fa fa-home"></span>
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="">
-              <span class="bi bi-pencil"></span>
+            <a href="#/inputpage">
+              <span class="fa fa-pencil"></span>
               <span>Input</span>
             </a>
           </li>
           <li>
             <a href="">
-              <span class="bi bi-clipboard"></span>
+              <span class="fa fa-clipboard"></span>
               <span>Laporan</span>
             </a>
           </li>
           <li>
             <a href="#myModal" data-bs-toggle="modal">
-              <span class="bi bi-box-arrow-right leave"></span>
+              <span class="fa fa-sign-out leave"></span>
               <span>Keluar</span>
             </a>
           </li>
         </ul>
       </div>
     </div>
-
     <div class="main">
       <navigation-bar></navigation-bar>
 
-      <div class="main-content"></div>
+      <div class="main-content" id="mainContent"></div>
     </div>
 
     <!-- Modal -->
@@ -76,8 +84,8 @@
             <button
               type="button"
               class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
+              data-bs-dismiss="modal">
+            </button>
           </div>
 
           <div class="modal-body">
@@ -91,5 +99,16 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                select: true
+            } );
+        } );
+    </script>
   </body>
 </html>
