@@ -125,7 +125,7 @@ button[type="submit"]{
   font-size: 12px;
 }
 
-.form-box button[type="submit"]:hover{
+button[type="submit"]:hover{
   background-color: #666c99;
   color: white;
 }
@@ -302,60 +302,81 @@ button[type="submit"]{
 
 .main-content {
   overflow-x: hidden;
-  padding:2rem 1rem 1rem 1rem;
+  padding: 2rem;
   min-height: 90vh;
 }
 
 /* content Home Page*/
 .home-content {
   overflow-x: hidden;
-  padding:2rem;
+  padding: 2rem;
   min-height: 90vh;
   background: var(--main-color);
 }
+
 .card-footer a{
   text-decoration: none;
   color: white;
 }
+
 .card-total{
-  background-color: #989BF2 ;
+  background-color: #f2cc8f;
 }
+
 .card-pengeluaran{
-  background-color: #F3838F;
+  background-color: #e07a5f;
 }
+
 .card-pemasukan{
-  background-color: #86C77C  ;
+  background-color: #81b29a;
 }
+
 #ChartTotal{
   margin-top: 50px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
+  border-radius: 10px;
 }
 
 /* content Input Page*/
 .input-content{
   padding: 1rem;
 }
+
 .input-container{
   background-color: white;
-  margin: 2rem 10rem;
   padding: 1rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
-  border-radius: 5px;
-  min-height: 45px;
-  min-width: 44px
+  border-radius: 10px;
+  width: 90%;
+  margin: 0.5rem auto 3rem auto;
 }
+
 .input-content button{
   width: 100%;
 }
-.input-content button[type="submit"]:hover{
-  background-color: #666c99;
+
+.input-content button[type="submit"]{
+  border-radius: 5px;
 }
+
 .table-wrapper{
-  height: 80vh;
-  padding: 0rem 3rem;
+  /*height: 80vh;*/
+  padding: 1rem;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
+  border-radius: 10px;
 }
+
 .table-title{
   text-align: center;
   padding-bottom: 1rem;
+}
+
+h3{
+  text-align: center;
 }
 
 /*modal logout*/
@@ -373,7 +394,6 @@ button[type="submit"]{
   border-radius: 5px;
   width: 100%;
   letter-spacing: .1rem;
-  padding: 12px;
   min-height: 44px;
   min-width: 44px;
   font-size: 14px;

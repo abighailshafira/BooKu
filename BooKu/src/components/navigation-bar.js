@@ -6,7 +6,7 @@ class NavigationBar extends HTMLElement {
   render() {
     this.innerHTML = `
     <div class="user">
-      <a href=""></a>
+      <a href="profile.html"></a>
       <p>dicoding</p>
     </div>`;
   }
