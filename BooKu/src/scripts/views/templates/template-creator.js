@@ -1,43 +1,37 @@
 /* eslint-disable linebreak-style */
 const createHomeTemplate = () => `
-<div class="row">
-    <div class="col-sm">
-        <div class="card card-pemasukan" >
-            <div class="card-body">
-                <div>
-                    <h5>Pemasukan</h5>
-                    <h4><b>Rp 2.000.000</b></h4>
-                </div>
-            </div>
-            <div class="card-footer">
-                <a href="">View all</a>
+<div class="wrapper">
+    <div class="card card-pemasukan" >
+        <div class="card-body">
+            <div>
+                <h5>Pemasukan</h5>
+                <h4><b>Rp 2.000.000</b></h4>
             </div>
         </div>
-    </div>
-    <div class="col-sm">
-        <div class="card card-pengeluaran" >
-            <div class="card-body">
-                <div>
-                    <h5>Pengeluaran</h5>
-                    <h4><b>Rp 500.000</b></h4>
-                </div>
-            </div>
-            <div class="card-footer">
-                <a href="">View all</a>
-            </div>
+        <div class="card-footer">
+            <a href="">View all</a>
         </div>
     </div>
-    <div class="col-sm">
-        <div class="card card-total">
-            <div class="card-body">
-                <div>
-                    <h5>Total</h5>
-                    <h4><b>Rp 1.500.000</b></h4>
-                </div>
+    <div class="card card-pengeluaran" >
+        <div class="card-body">
+            <div>
+                <h5>Pengeluaran</h5>
+                <h4><b>Rp 500.000</b></h4>
             </div>
-            <div class="card-footer">
-                <a href="">View all</a>
+        </div>
+        <div class="card-footer">
+            <a href="">View all</a>
+        </div>
+    </div>
+    <div class="card card-total">
+        <div class="card-body">
+            <div>
+                <h5>Total</h5>
+                <h4><b>Rp 1.500.000</b></h4>
             </div>
+        </div>
+        <div class="card-footer">
+            <a href="">View all</a>
         </div>
     </div>
 </div>

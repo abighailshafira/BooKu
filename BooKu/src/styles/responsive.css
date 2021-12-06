@@ -58,43 +58,48 @@
     }
 }
 
+@media screen and (max-width: 850px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 25px;
+    }
+}
+
 @media screen and (max-width: 600px){
-    .sidebar-menu ul li a{
+    .sidebar-menu span:last-child{
         font-size: 12px;
     }
 
     p{
         font-size: 13px;
     }
+
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-row-gap: 15px;
+    }
 }
 
 @media screen and (max-width: 360px){
+    .user a{
+        width: 30px;
+        height: 30px;
+    }
+
     .sidebar {
-        width: 50px;
+        width: 55px;
     }
 
     .sidebar .sidebar-menu ul li a{
         padding-left: 0px;
     }
 
-    .main,
-    footer {
-        margin-left: 50px;
-    }
-
-    .user a{
-        width: 35px;
-        height: 35px;
-    }
-
-    .sidebar .sidebar-header
-    {
+    .sidebar .sidebar-header{
         padding-left: 0px;
     }
 
-    .sidebar .sidebar-menu ul li
-    {
-        padding-left: 16px;
+    .sidebar .sidebar-menu ul li{
+        padding-left: 20px;
     }
 
     .sidebar .sidebar-menu ul{
@@ -116,14 +121,27 @@
 
     #sidebar-toggle:checked ~ .main,
     #sidebar-toggle:checked ~ footer {
-        margin-left: 50px;
+        margin-left: 55px;
     }
 
     #sidebar-toggle:checked ~ .main navigation-bar{
-        left: 50px;
+        left: 55px;
+    }
+
+    .main,
+    footer {
+        margin-left: 55px;
     }
 
     .form-input input::placeholder{
         font-size: 12px;
+    }
+    
+    .card-body h5{
+        font-size: 15px;
+    }
+
+    .card-body h4{
+        font-size: 16px;
     }
 }

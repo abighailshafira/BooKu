@@ -309,9 +309,14 @@ button[type="submit"]:hover{
 /* content Home Page*/
 .home-content {
   overflow-x: hidden;
-  padding: 2rem;
-  min-height: 90vh;
+  padding: 1rem;
   background: var(--main-color);
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
 }
 
 .card-footer a{
