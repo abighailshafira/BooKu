@@ -20,6 +20,19 @@ body{
   --hover-color:rgba(255, 255, 255, 0.418);
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 .navbar-brand{
 	color: black;
 	margin: 10px;
@@ -148,20 +161,6 @@ button[type="submit"]{
   justify-content: center;
 }
 
-/*skip-link*/
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background-color: #bf1722;
-  color: white;
-  padding: 8px;
-  z-index: 100;
-}
-
-.skip-link:focus {
-  top: 0;
-}
 
 /*side-bar*/
 .sidebar {
@@ -170,7 +169,7 @@ button[type="submit"]{
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 99;
   background: var(--dec-color);
   color: white;
   transition: width 300ms;
