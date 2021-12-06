@@ -8,6 +8,7 @@
     .sidebar .sidebar-menu li span:last-child{
         display: none;
     }
+
     .sidebar .sidebar-header
     {
         padding-left: 8px;
@@ -21,7 +22,8 @@
         font-size: 20px;
     }
 
-    .main {
+    .main,
+    footer {
         margin-left: 70px;
     }
 
@@ -33,9 +35,11 @@
         width: 35px;
         height: 35px;
     }
+
     .sidebar-menu ul{
         padding: 6px;
     }
+
     .sidebar-menu span{
         margin-right: 0;
     }
@@ -53,6 +57,17 @@
         padding-left: 6px;
     }
 }
+
+@media screen and (max-width: 600px){
+    .sidebar-menu ul li a{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 360px){
     .sidebar {
         width: 50px;
@@ -62,7 +77,8 @@
         padding-left: 0px;
     }
 
-    .main {
+    .main,
+    footer {
         margin-left: 50px;
     }
 
@@ -85,10 +101,6 @@
         padding: 0px;
     }
 
-    .main .navigation-bar {
-        height: 3rem;
-    }
-
     #sidebar-toggle:checked ~ .sidebar {
         width: 150px;
     }
@@ -102,11 +114,16 @@
         padding-left: 0px;
     }
 
-    #sidebar-toggle:checked ~ .main {
+    #sidebar-toggle:checked ~ .main,
+    #sidebar-toggle:checked ~ footer {
         margin-left: 50px;
     }
 
-    #sidebar-toggle:checked ~ .main .navigation-bar {
+    #sidebar-toggle:checked ~ .main navigation-bar{
         left: 50px;
+    }
+
+    .form-input input::placeholder{
+        font-size: 12px;
     }
 }

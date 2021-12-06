@@ -346,11 +346,11 @@ button[type="submit"]:hover{
 
 .input-container{
   background-color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
   border-radius: 10px;
-  width: 90%;
-  margin: 0.5rem auto 3rem auto;
+  width: 100%;
+  margin: 0 auto 3rem auto;
 }
 
 .input-content button{
@@ -362,7 +362,6 @@ button[type="submit"]:hover{
 }
 
 .table-wrapper{
-  /*height: 80vh;*/
   padding: 1rem;
   background-color: white;
   margin: 0 auto;
@@ -397,4 +396,19 @@ h3{
   min-height: 44px;
   min-width: 44px;
   font-size: 14px;
+}
+
+footer{
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  bottom: 0;
+  margin-left: 240px;
+  font-weight: bold;
+}
+
+#sidebar-toggle:checked ~ footer {
+  margin-left: 70px;
 }

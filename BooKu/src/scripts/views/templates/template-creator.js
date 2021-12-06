@@ -76,10 +76,10 @@ const createInputTemplate = () => `
 
 const creatTableTemplate = () => `
 <div class="table-title">
-    <h3>Detail transaksi</h3>
+    <h3>Transaksi Pemasukan dan Pengeluaran</h3>
 </div>
-<div class="table-wrapper">
-    <table id="example" class="table table-striped" style="width:100%">
+<div class="table-wrapper table-responsive">
+    <table id="example" class="table table-striped table-hover" style="width:100%">
         <thead>
             <tr>
                 <th>No</th>
@@ -95,10 +95,10 @@ const creatTableTemplate = () => `
             <tr>
                 <td>1</td>
                 <td>12/12/2001</td>
-                <td>200000</td>
-                <td>100000</td>
-                <td>100000</td>
-                <td>Uang keluar untuk modal</td>
+                <td>Rp 200000</td>
+                <td>Rp 100000</td>
+                <td>Rp 100000</td>
+                <td>Modal</td>
                 <td>
                     <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                 </td>
@@ -106,15 +106,23 @@ const creatTableTemplate = () => `
             <tr>
                 <td>2</td>
                 <td>12/12/2001</td>
-                <td>200000</td>
-                <td>100000</td>
-                <td>100000</td>
-                <td>Uang keluar untuk modal</td>
+                <td>Rp 200000</td>
+                <td>Rp 100000</td>
+                <td>Rp 100000</td>
+                <td>Modal</td>
                 <td>
                     <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                 </td>
             </tr>
         </tbody>
+        <tfoot>
+            <td colspan="2"><b>Jumlah</b></td>
+            <td>Rp 400000</td>
+            <td>Rp 200000</td>
+            <td>Rp 200000</td>
+            <td></td>
+            <td></td>
+        </tfoot>
     </table>
 </div>
 `;
