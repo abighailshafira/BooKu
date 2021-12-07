@@ -7,6 +7,7 @@ import '../styles/style.css';
 import '../styles/responsive.css';
 import '../components/navigation-bar.js';
 import '../components/skip-to-content.js';
+import '../components/navbar-brand.js';
 import App from './views/app.js';
 import swRegister from './utils/sw-register';
 

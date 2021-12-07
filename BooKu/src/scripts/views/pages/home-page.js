@@ -10,7 +10,7 @@ const HomePage = {
             <h2>Hello 
             <strong>Dicoding,</strong>
             </h2>
-            <p>Catat transaksi pemasukan dan pengeluaran usahamu di sini!</p>
+            <p tabindex="0">Catat transaksi pemasukan dan pengeluaran usahamu di sini!</p>
         </div>
         <div class="home-content" id="homeContent"></div>
     </div>`;

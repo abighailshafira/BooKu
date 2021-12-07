@@ -31,11 +31,6 @@
         margin-right: 1rem ;
     }
 
-    .user a{
-        width: 35px;
-        height: 35px;
-    }
-
     .sidebar-menu ul{
         padding: 6px;
     }
@@ -63,6 +58,10 @@
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 25px;
     }
+
+    .table-title h3{
+        font-size: 23px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -78,14 +77,13 @@
         grid-template-columns: 1fr;
         grid-row-gap: 15px;
     }
+
+    .table-title h3{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 360px){
-    .user a{
-        width: 30px;
-        height: 30px;
-    }
-
     .sidebar {
         width: 55px;
     }
@@ -143,5 +141,9 @@
 
     .card-body h4{
         font-size: 16px;
+    }
+
+    .table-title h3{
+        font-size: 18px;
     }
 }
