@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import { createInputTemplate, creatTableTemplate }
+import { createInputTemplate, createTableTemplate }
   from '../templates/template-creator';
 
 /* eslint-disable linebreak-style */
@@ -13,7 +13,7 @@ const InputPage = {
 
   async afterRender() {
     const inputContainer = document.querySelector('#inputContent');
-    inputContainer.innerHTML += createInputTemplate() + creatTableTemplate();
+    inputContainer.innerHTML += createInputTemplate() + createTableTemplate();
   },
 };
 
