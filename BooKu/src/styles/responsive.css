@@ -89,18 +89,10 @@
     
     #containerChart {
         margin: 30px 0;
-        border-radius: 0;
     }
 
     .table-title h3{
         font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 430px){
-    .user a{
-        width: 30px;
-        height: 30px;
     }
 }
 
@@ -154,10 +146,6 @@
 
     .form-input input::placeholder{
         font-size: 12px;
-    }
-    
-    .card-body{
-        height: 100px;
     }
     
     .card-body h5{
