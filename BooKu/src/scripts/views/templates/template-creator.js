@@ -35,7 +35,7 @@ const createHomeTemplate = () => `
         </div>
     </div>
 </div>
-<section>
+<section id="containerChart" style="width: 100%">
     <canvas id="ChartTotal"></canvas>
 </section>
 `;
@@ -68,7 +68,7 @@ const createInputTemplate = () => `
 </div> 
 `;
 
-const creatTableTemplate = () => `
+const createTableTemplate = () => `
 <div class="table-title">
     <h3>Transaksi Pemasukan dan Pengeluaran</h3>
 </div>
@@ -124,5 +124,5 @@ const creatTableTemplate = () => `
 export {
   createHomeTemplate,
   createInputTemplate,
-  creatTableTemplate,
+  createTableTemplate,
 };
