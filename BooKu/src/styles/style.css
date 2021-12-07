@@ -22,15 +22,20 @@ body{
 
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 0;
-  background-color: #bf1722;
-  color: white;
-  padding: 8px;
+  top: -100px;
+  left: 10px;
+  background-color: #f4f1de;
+  padding: 15px;
+  font-size: 14px;
   z-index: 100;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  color: black;
 }
 .skip-link:focus {
-  top: 0;
+  top: 20px;
+  color: black;
 }
 
 .navbar-brand{
@@ -367,7 +372,7 @@ button[type="submit"]:hover{
 }
 
 .table-wrapper{
-  padding: 1rem;
+  padding: 2rem;
   background-color: white;
   margin: 0 auto;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
