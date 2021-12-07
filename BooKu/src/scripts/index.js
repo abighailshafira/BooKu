@@ -8,6 +8,7 @@ import '../styles/responsive.css';
 import '../components/navigation-bar.js';
 import '../components/skip-to-content.js';
 import App from './views/app.js';
+import swRegister from './utils/sw-register';
 
 const app = new App({
   drawer: document.querySelector('#navigationMenu'),
@@ -20,4 +21,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });
