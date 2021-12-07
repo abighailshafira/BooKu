@@ -314,7 +314,6 @@ button[type="submit"]:hover{
 /* content Home Page*/
 .home-content {
   overflow-x: hidden;
-  padding: 1rem;
   background: var(--main-color);
 }
 
@@ -341,12 +340,15 @@ button[type="submit"]:hover{
   background-color: #81b29a;
 }
 
-#ChartTotal{
-  margin-top: 50px;
-  background-color: white;
-  padding: 1rem;
+#containerChart {
+  margin: 50px 0px;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
   border-radius: 10px;
+  background-color: white;
+}
+
+#ChartTotal{
+  padding: 5px;
 }
 
 /* content Input Page*/
