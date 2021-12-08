@@ -40,7 +40,7 @@
     }
 
     #sidebar-toggle:checked ~ .sidebar {
-        width: 150px;
+        width: 160px;
     }
 
     #sidebar-toggle:checked ~ .sidebar .sidebar-header .navbar-brand,

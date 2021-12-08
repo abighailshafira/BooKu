@@ -8,7 +8,7 @@ const createHomeTemplate = () => `
                 <h4 tabindex="0"><b>Rp 2.000.000</b></h4>
             </div>
         </div>
-        <div class="card-footer">
+        <div class="card-footer py-3">
             <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
         </div>
     </div>
@@ -19,7 +19,7 @@ const createHomeTemplate = () => `
                 <h4 tabindex="0"><b>Rp 500.000</b></h4>
             </div>
         </div>
-        <div class="card-footer">
+        <div class="card-footer py-3">
             <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
         </div>
     </div>
@@ -30,7 +30,7 @@ const createHomeTemplate = () => `
                 <h4 tabindex="0"><b>Rp 1.500.000</b></h4>
             </div>
         </div>
-        <div class="card-footer">
+        <div class="card-footer py-3">
             <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
         </div>
     </div>

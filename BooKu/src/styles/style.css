@@ -24,18 +24,20 @@ body{
   position: absolute;
   top: -100px;
   left: 10px;
-  background-color: #f4f1de;
+  background-color: #e07a5f;
   padding: 15px;
   font-size: 14px;
-  z-index: 100;
+  z-index: 1000;
   text-decoration: none;
   border-radius: 5px;
   border: none;
-  color: black;
+  font-weight: bold;
+  color: white;
 }
+
 .skip-link:focus {
   top: 20px;
-  color: black;
+  color: white;
 }
 
 .navbar-brand{
@@ -325,6 +327,7 @@ button[type="submit"]:hover{
 .card-footer a{
   text-decoration: none;
   color: black;
+  padding: 13px;
 }
 
 .card-footer a i{
@@ -382,7 +385,7 @@ button[type="submit"]:hover{
 }
 
 .table-wrapper{
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: white;
   margin: 0 auto;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
