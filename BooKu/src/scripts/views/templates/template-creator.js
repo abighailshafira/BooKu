@@ -124,8 +124,16 @@ const createTableTemplate = () => `
 </div>
 `;
 
+const createNoteTemplate =()=>`
+    <div class="sticky-notes">
+        <button class="add-notes" type="button">+</button>
+    </div>
+    <p>Catatan: Klik 2x untuk menghapus note</p>
+`;
+
 export {
   createHomeTemplate,
   createInputTemplate,
   createTableTemplate,
+  createNoteTemplate,
 };
