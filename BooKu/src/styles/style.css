@@ -21,7 +21,7 @@ body{
 }
 
 .skip-link {
-  position: absolute;
+  position: fixed;
   top: -100px;
   left: 10px;
   background-color: #e07a5f;
@@ -398,6 +398,24 @@ button[type="submit"]:hover{
 }
 
 h3{
+  text-align: center;
+}
+
+.table-wrapper .export-button{
+  width: auto;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 12px;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.table-wrapper table th{
   text-align: center;
 }
 

@@ -73,6 +73,9 @@ const createTableTemplate = () => `
     <h3 tabindex="0">Transaksi Pemasukan dan Pengeluaran</h3>
 </div>
 <div class="table-wrapper table-responsive">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button id="pdf" class="btn btn-warning me-md-2 export-button">Export Laporan</button>
+    </div>
     <table id="example" class="table table-striped table-hover">
         <thead>
             <tr>
@@ -87,24 +90,24 @@ const createTableTemplate = () => `
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
+                <td class="text-center">1</td>
                 <td>12/12/2001</td>
                 <td>Rp 200000</td>
                 <td>Rp 100000</td>
                 <td>Rp 100000</td>
                 <td>Modal</td>
-                <td>
+                <td class="text-center">
                     <button type="button" class="btn btn-danger" aria-label="Hapus data"><i class="fa fa-trash"></i></button>
                 </td>
             </tr>
             <tr>
-                <td>2</td>
+                <td class="text-center">2</td>
                 <td>12/12/2001</td>
                 <td>Rp 200000</td>
                 <td>Rp 100000</td>
                 <td>Rp 100000</td>
                 <td>Modal</td>
-                <td>
+                <td class="text-center">
                     <button type="button" class="btn btn-danger" aria-label="Hapus data"><i class="fa fa-trash"></i></button>
                 </td>
             </tr>
