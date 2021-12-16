@@ -419,6 +419,46 @@ h3{
   text-align: center;
 }
 
+/* content note page */
+.note-title{
+  padding: 16px;
+  margin-left: 1rem;
+}
+.sticky-notes {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 26px;
+  gap: 2rem;
+}
+.notes{
+  height: 200px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+  background-color: rgb(192, 192, 192)
+}
+.add-notes{
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding-bottom: 16px;
+  font-size: 120px;
+  color: rgb(192, 192, 192);
+  transition: background 0.3s;
+}
+.add-notes:hover{
+  background-color: rgb(192, 192, 192);
+  color: white;
+}
+
 /*modal logout*/
 .modal-body-button button{
   font-size: 14px;
