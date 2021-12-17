@@ -68,67 +68,170 @@ const createInputTemplate = () => `
 </div> 
 `;
 
-const createTableTemplate = () => `
-<div class="table-title">
-    <h3 tabindex="0">Transaksi Pemasukan dan Pengeluaran</h3>
+// const createTableTemplate = () => `
+// <div class="table-title">
+//     <h3 tabindex="0">Transaksi Pemasukan dan Pengeluaran</h3>
+// </div>
+// <div class="table-wrapper table-responsive">
+//     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+//         <button id="pdf" class="btn btn-warning me-md-2 export-button">Export Laporan</button>
+//     </div>
+//     <table id="example" class="table table-striped table-hover">
+//         <thead>
+//             <tr>
+//                 <th>No</th>
+//                 <th>Tanggal</th>
+//                 <th>Pemasukan</th>
+//                 <th>Pengeluaran</th>
+//                 <th>Total</th>
+//                 <th>Keterangan</th>
+//                 <th>Hapus</th>
+//             </tr>
+//         </thead>
+//         <tbody>
+//             <tr>
+//                 <td class="text-center">1</td>
+//                 <td>12/12/2001</td>
+//                 <td>Rp 200000</td>
+//                 <td>Rp 100000</td>
+//                 <td>Rp 100000</td>
+//                 <td>Modal</td>
+//                 <td class="text-center">
+//                     <button type="button" class="btn btn-danger" aria-label="Hapus data"><i class="fa fa-trash"></i></button>
+//                 </td>
+//             </tr>
+//             <tr>
+//                 <td class="text-center">2</td>
+//                 <td>12/12/2001</td>
+//                 <td>Rp 200000</td>
+//                 <td>Rp 100000</td>
+//                 <td>Rp 100000</td>
+//                 <td>Modal</td>
+//                 <td class="text-center">
+//                     <button type="button" class="btn btn-danger" aria-label="Hapus data"><i class="fa fa-trash"></i></button>
+//                 </td>
+//             </tr>
+//         </tbody>
+//         <tfoot>
+//             <td colspan="2"><b>Jumlah</b></td>
+//             <td>Rp 400000</td>
+//             <td>Rp 200000</td>
+//             <td>Rp 200000</td>
+//             <td></td>
+//             <td></td>
+//         </tfoot>
+//     </table>
+// </div>
+// `;
+
+const createTableTemplate = (listku) => `
+<tr>
+  <td>${listku.id}</td>
+  <td>${listku.tgl_transaksi}</td>
+  <td>Rp ${listku.pemasukan}</td>
+  <td>Rp ${listku.pengeluaran}</td>
+  <td>Rp 100000</td>
+  <td>${listku.keterangan}</td>
+  <td>
+      <button onclick="goDoSomething(${listku.id});" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+  </td>
+</tr>`;
+
+const createNoteTemplate = () =>`
+<div class="sticky-notes">
+    <button class="add-notes" type="button">+</button>
 </div>
-<div class="table-wrapper table-responsive">
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button id="pdf" class="btn btn-warning me-md-2 export-button">Export Laporan</button>
-    </div>
-    <table id="example" class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Tanggal</th>
-                <th>Pemasukan</th>
-                <th>Pengeluaran</th>
-                <th>Total</th>
-                <th>Keterangan</th>
-                <th>Hapus</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="text-center">1</td>
-                <td>12/12/2001</td>
-                <td>Rp 200000</td>
-                <td>Rp 100000</td>
-                <td>Rp 100000</td>
-                <td>Modal</td>
-                <td class="text-center">
-                    <button type="button" class="btn btn-danger" aria-label="Hapus data"><i class="fa fa-trash"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-center">2</td>
-                <td>12/12/2001</td>
-                <td>Rp 200000</td>
-                <td>Rp 100000</td>
-                <td>Rp 100000</td>
-                <td>Modal</td>
-                <td class="text-center">
-                    <button type="button" class="btn btn-danger" aria-label="Hapus data"><i class="fa fa-trash"></i></button>
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td colspan="2"><b>Jumlah</b></td>
-            <td>Rp 400000</td>
-            <td>Rp 200000</td>
-            <td>Rp 200000</td>
-            <td></td>
-            <td></td>
-        </tfoot>
-    </table>
-</div>
+<p>Catatan: Klik 2x untuk menghapus note</p>
 `;
 
-const createNoteTemplate =()=>`
-    <div class="sticky-notes">
-        <button class="add-notes" type="button">+</button>
-    </div>
-    <p>Catatan: Klik 2x untuk menghapus note</p>
+const createFormRegisterTemplate = () => `
+<div class="card-body">
+    <h4 class="title text-center mt-5">Registrasi Akun</h4>
+    <form class="form-box px-3">
+        <div class="form-input">
+        <span><i class="fa fa-envelope-o"></i></span>
+        <input
+            type="email"
+            name="email"
+            id="inputName"
+            placeholder="Email"
+            required
+        />
+        </div>
+        <div class="form-input">
+        <span><i class="fa fa-key"></i></span>
+        <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
+        </div>
+        <div class="form-input">
+        <span><i class="fa fa-key"></i></span>
+        <input
+            type="password"
+            name="confirmPassword"
+            id="inputConfirm"
+            placeholder="Ulangi Password"
+            required
+        />
+        </div>
+
+        <div class="mb-3">
+        <button type="submit" class="submit btn btn-block">Daftar</button>
+        </div>
+
+        <div class="text-center mb-2">
+        Sudah memiliki akun?
+        <a
+            href="/"
+            class="link"
+            aria-label="klik di sini jika kamu telah memiliki akun"
+            >Masuk</a
+        >
+        </div>
+    </form>
+</div>`;
+
+
+const createFormLoginTemplate = () => `
+<div class="card-body">
+    <h4 class="title text-center mt-5" tabindex="0">
+      Selamat datang di BooKu!
+    </h4>
+
+    <form  class="form-box px-3 ">
+      <div class="form-input">
+        <span><i class="fa fa-user-o"></i></span>
+        <input
+          type="email"
+          name="email"
+          id="inputEmail"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="form-input">
+        <span><i class="fa fa-key"></i></span>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <button type="submit" class="btn btn-block">Masuk</button>
+      </div>
+
+      <div class="text-center">
+        Belum memiliki akun? 
+        <a
+          href="register.html"
+          class="link"
+          aria-label="klik di sini jika kamu belum memiliki akun"
+          >Daftar</a
+        >
+      </div>
+    </form>
+</div>
 `;
 
 export {
@@ -136,4 +239,6 @@ export {
   createInputTemplate,
   createTableTemplate,
   createNoteTemplate,
+  createFormRegisterTemplate,
+  createFormLoginTemplate,
 };

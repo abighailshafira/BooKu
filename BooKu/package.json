@@ -25,6 +25,7 @@
     "html-webpack-plugin": "^4.5.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "login-webpack-plugin": "^1.0.5",
     "style-loader": "^2.0.0",
     "webpack": "^4.43.0",
     "webpack-bundle-analyzer": "^4.5.0",
