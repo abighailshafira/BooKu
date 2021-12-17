@@ -4,7 +4,6 @@ import { createInputTemplate, createTableTemplate }
 import jsPDF from 'jspdf';
 import'jspdf-autotable';
 
-/* eslint-disable linebreak-style */
 const InputPage = {
   async render() {
     return `

@@ -21,13 +21,6 @@ class App {
     /* reder page data chart */
     const canvasElement = document.getElementById('ChartTotal');
     const ChartTotal = new Chart(canvasElement, configChart);
-
-    /* skip link */
-    const skipLink = document.querySelector('.skip-link');
-    skipLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      document.querySelector('#mainContent').focus();
-    });
   }
 }
 export default App;

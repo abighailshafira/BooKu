@@ -7,7 +7,7 @@ class NavbarBrand extends HTMLElement {
   render() {
     this.innerHTML = `
     <div class="navbar">
-      <a class="navbar-brand" href="index.html">B<span>oo</span>Ku</a>
+      <a class="navbar-brand">B<span>oo</span>Ku</a>
     </div>`;
   }
 }

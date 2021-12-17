@@ -18,7 +18,7 @@ const HomePage = {
 
   async afterRender() {
     const homeContainer = document.querySelector('#homeContent');
-    homeContainer.innerHTML += createHomeTemplate();
+    homeContainer.innerHTML = createHomeTemplate();
   },
 };
 
