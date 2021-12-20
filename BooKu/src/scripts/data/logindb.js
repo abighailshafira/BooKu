@@ -15,7 +15,7 @@ class LoginDb {
     });
 
     if (response.status == 200) {
-      alert('Login Berhasil');
+      // alert('Login Berhasil');
       response.json().then((data) => {
         localStorage.setItem('auth', 1);
         localStorage.setItem('token', data.token);

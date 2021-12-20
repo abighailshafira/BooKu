@@ -293,7 +293,7 @@ button[type="submit"]:hover{
 .user {
   display: flex;
   align-items: center;
-  margin-right: 3rem;
+  margin-right: 1rem;
   margin-left: auto;
 }
 

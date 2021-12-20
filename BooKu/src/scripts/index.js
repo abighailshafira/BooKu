@@ -24,7 +24,7 @@ buttonDelete.forEach((button) => {
     localStorage.removeItem('token');
     localStorage.removeItem('email_user');
     localStorage.removeItem('id_user');
-    alert('Berhasil Logout');
+    // alert('Berhasil keluar');
     window.location.assign('http://localhost:8080/');
   });
 });
