@@ -1,10 +1,15 @@
 import API_ENDPOINT from '../globals/api-endpoint';
 
-class TransaksiDB {
-  static async listTransaksi() {
+class TransaksiDb {
+  static async listRestaurant() {
     const response = await fetch(API_ENDPOINT.LIST_TRANSAKSI);
     const responseJson = await response.json();
     return responseJson.data;
+  }
+
+  static async chart(id) {
+    const response = await fetch(API_ENDPOINT.CHART(id));
+    return response.json();
   }
 
   static async detailRestaurant(id) {
@@ -12,10 +17,10 @@ class TransaksiDB {
     return response.json();
   }
 
-  // static async deleteTransaksi(id){
-  //   const response = await fetch(API_ENDPOINT.DELETE_TRANSAKSI(id));
-  //   return response.json();
-  // }
+  static async deleteTransaksi(id){
+    const response = await fetch(API_ENDPOINT.DELETE_TRANSAKSI(id));
+    return response.json();
+  }
 
   static async reviewRestaurant(review) {
     const response = await fetch(API_ENDPOINT.TRANSAKSI, {
@@ -25,19 +30,18 @@ class TransaksiDB {
       },
       body: JSON.stringify(review),
     });
+
     console.log(response.status);
+    
     if (response.status == 201) {
-    //   window.location.assign("http://localhost:8080/")
-      alert('TRANSAKSI BERHASIL!!!');
-      // window.location.assign("http://localhost:8080/#/inputpage")
+      alert('Data Transaksi Berhasil Ditambahkan');
       location.reload();
     } else{
-      alert('TRANSAKSI GAGAL ');
+      alert('Data Transaksi Gagal Ditambahkan');
     }
-    console.log('INI RESPON SAYA harusnya jadi status ', response.status);
 
     return response.status;
   }
 }
 
-export default TransaksiDB;
+export default TransaksiDb;

@@ -1,35 +1,21 @@
-import { createFormLoginTemplate } from '../templates/template-creator.js';
+import LoginDb from '../../data/logindb';
+// import { createFormLoginTemplate } from '../templates/template-creator.js';
+import FormLogin from '../../utils/form-login';
 
-const Login = {
+const LoginPage = {
   async render() {
-    return `
-    <div class="content">
-      
-    </div>`;
+	return `
+    <div id="formLoginContainer"></div>`;
   },
 
   async afterRender() {
-    const homeContainer = document.querySelector('.content');
-    homeContainer.innerHTML = createFormLoginTemplate();
+	const data = await LoginDb.detailRestaurant('rqdv5juczeskfw1e867');      
 
-    this.form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      console.log(2334464);
-			var error = 0;
-			self.fields.forEach((field) => {
-				const input = document.querySelector(`#${field}`);
-				if (self.validateFields(input) == false) {
-					error++;
-				}
-			});
-			if (error == 0) {
-				//do login api here
-				localStorage.setItem("auth", 1);
-				this.form.submit();
-			}
-		});
-  },
-  
+	await FormLogin.init({
+		formLoginContainer: document.querySelector('#formLoginContainer'),
+		id: data.restaurant.id,
+	});
+}
 };
 
-export default Login;
+export default LoginPage;

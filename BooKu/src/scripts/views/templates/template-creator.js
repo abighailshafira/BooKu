@@ -1,70 +1,76 @@
 /* eslint-disable linebreak-style */
 const createHomeTemplate = () => `
 <div class="wrapper">
-    <div class="card card-pemasukan" >
-        <div class="card-body">
-            <div>
-                <h5 tabindex="0">Pemasukan</h5>
-                <h4 tabindex="0"><b>Rp 2.000.000</b></h4>
-            </div>
-        </div>
-        <div class="card-footer py-3">
-            <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
-        </div>
+  <div class="card card-pemasukan" >
+    <div class="card-body">
+      <div>
+        <h5 tabindex="0">Pemasukan</h5>
+        <h4 tabindex="0"><b>Rp 2.000.000</b></h4>
+      </div>
     </div>
-    <div class="card card-pengeluaran" >
-        <div class="card-body">
-            <div>
-                <h5 tabindex="0">Pengeluaran</h5>
-                <h4 tabindex="0"><b>Rp 500.000</b></h4>
-            </div>
-        </div>
-        <div class="card-footer py-3">
-            <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
-        </div>
+    <div class="card-footer py-3">
+      <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
     </div>
-    <div class="card card-total">
-        <div class="card-body">
-            <div>
-                <h5 tabindex="0">Total</h5>
-                <h4 tabindex="0"><b>Rp 1.500.000</b></h4>
-            </div>
-        </div>
-        <div class="card-footer py-3">
-            <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
-        </div>
+  </div>
+
+  <div class="card card-pengeluaran" >
+    <div class="card-body">
+      <div>
+        <h5 tabindex="0">Pengeluaran</h5>
+        <h4 tabindex="0"><b>Rp 500.000</b></h4>
+      </div>
     </div>
+    <div class="card-footer py-3">
+      <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+
+  <div class="card card-total">
+    <div class="card-body">
+      <div>
+        <h5 tabindex="0">Total</h5>
+        <h4 tabindex="0"><b>Rp 1.500.000</b></h4>
+      </div>
+    </div>
+    <div class="card-footer py-3">
+      <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
 </div>
+
 <section id="containerChart" style="width: 100%">
-    <canvas id="ChartTotal"></canvas>
+  <canvas id="ChartTotal"></canvas>
 </section>
 `;
 
 const createInputTemplate = () => `
 <div class="row input-container">
-    <div class="col-sm">
-        <label for="input-title" class="form-label">Pengeluaran</label>
-        <div class="input-group mb-3">
-            <span class="input-group-text">Rp.</span>
-            <input type="text" class="form-control" aria-label="Jumlah pengeluaran dalam rupiah">
-        </div>
+  <div class="col-sm">
+    <label for="input-title" class="form-label">Pengeluaran</label>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Rp.</span>
+      <input type="text" class="form-control" aria-label="Jumlah pengeluaran dalam rupiah">
     </div>
-    <div class="col-sm">
-        <label for="input-title" class="form-label">Pemasukan</label>
-        <div class="input-group mb-3">
-            <span class="input-group-text">Rp.</span>
-            <input type="text" class="form-control" aria-label="Jumlah pemasukan dalam rupiah">
-        </div>
+  </div>
+
+  <div class="col-sm">
+    <label for="input-title" class="form-label">Pemasukan</label>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Rp.</span>
+      <input type="text" class="form-control" aria-label="Jumlah pemasukan dalam rupiah">
     </div>
-    <div class="mb-3">
-        <label for="input-title" class="form-label">Keterangan</label>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" aria-label="keterangan transaksi">
-        </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="input-title" class="form-label">Keterangan</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" aria-label="keterangan transaksi">
     </div>
-    <div class="mb-3">
-        <button type="submit" class="btn btn-block">Tambah</button>
-    </div>
+  </div>
+
+  <div class="mb-3">
+    <button type="submit" class="btn btn-block">Tambah</button>
+  </div>
 </div> 
 `;
 
@@ -124,114 +130,191 @@ const createInputTemplate = () => `
 // </div>
 // `;
 
+// const createTableTemplate = (listku) => `
+// <tr>
+//   <td>${listku.id}</td>
+//   <td>${listku.tgl_transaksi}</td>
+//   <td>Rp ${listku.pemasukan}</td>
+//   <td>Rp ${listku.pengeluaran}</td>
+//   <td>Rp 100000</td>
+//   <td>${listku.keterangan}</td>
+//   <td>
+//       <button onclick="goDoSomething(${listku.id});" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+//   </td>
+// </tr>`;
+
+const createNoteTemplate = () =>`
+<div class="sticky-notes">
+  <button class="add-notes" type="button">+</button>
+</div>
+<p>Catatan: Klik 2x untuk menghapus note</p>
+`;
+
+const createFormRegisterTemplate = () => `
+<header>
+  <div class="navbar">
+    <a class="navbar-brand">B<span>oo</span>Ku</a>
+  </div>
+</header>
+
+<main>
+  <div class="form-container">
+    <div class="container">
+      <div class="row px-3">
+        <div class="card col-lg-10 col-xl-9 flex-row mx-auto px-0">
+          <div class="img-left d-none d-md-flex"></div>
+          
+          <div class="card-body">
+            <h4 class="title text-center mt-5">Registrasi Akun</h4>
+            <form class="form-box px-3">
+              <div class="form-input">
+                <span><i class="fa fa-envelope-o"></i></span>
+                <input
+                    type="email"
+                    name="email"
+                    id="inputName"
+                    placeholder="Email"
+                    required
+                />
+              </div>
+
+              <div class="form-input">
+                <span><i class="fa fa-key"></i></span>
+                <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
+              </div>
+
+              <div class="form-input">
+                <span><i class="fa fa-key"></i></span>
+                <input
+                    type="password"
+                    name="confirmPassword"
+                    id="inputConfirm"
+                    placeholder="Ulangi Password"
+                    required
+                />
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" class="submit btn btn-block">Daftar</button>
+              </div>
+
+              <div class="text-center mb-2">
+                Sudah memiliki akun?
+                <a
+                    href="/"
+                    class="link"
+                    aria-label="klik di sini jika kamu telah memiliki akun"
+                    >Masuk</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;
+
+const createFormLoginTemplate = () => `
+<header>
+  <div class="navbar">
+    <a class="navbar-brand">B<span>oo</span>Ku</a>
+  </div>
+</header>
+
+<main>
+  <div class="form-container">
+    <div class="container">
+      <div class="row px-3">
+        <div class="card col-lg-10 col-xl-9 flex-row mx-auto px-0">
+          <div class="img-left d-none d-md-flex"></div>
+
+          <div class="card-body">
+            <h4 class="title text-center mt-5" tabindex="0">
+              Selamat datang di BooKu!
+            </h4>
+
+            <form class="form-box px-3" action="/#/home">
+              <div class="form-input">
+                <span><i class="fa fa-envelope-o"></i></span>
+                <input type="text" name="name" id="inputName" placeholder="email">
+              </div>
+
+              <div class="form-input">
+                <span><i class="fa fa-key"></i></span>
+                <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" class="submit btn btn-block">Masuk</button>
+              </div>
+
+              <div class="text-center">
+                Belum memiliki akun? 
+                <a
+                  href="/#/register"
+                  class="link"
+                  aria-label="klik di sini jika kamu belum memiliki akun"
+                  >Daftar</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;
+
+const createFormTransaksiTemplate = () => `
+<div class="card-body">
+  <form class="form-box px-3">
+    <div class="col-sm-12">
+      <div class="col-sm">
+        <label for="input-title" class="form-label">Pengeluaran</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Rp.</span>
+          <input type="text" id="inputPengeluaran" class="form-control" aria-label="Jumlah pengeluaran dalam rupiah">
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <label for="input-title" class="form-label">Pemasukan</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Rp.</span>
+          <input type="text" id="inputPemasukan" class="form-control" aria-label="Jumlah pemasukan dalam rupiah">
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="input-title" class="form-label">Keterangan</label>
+      <div class="input-group mb-3">
+        <input type="text" id="inputKeterangan" class="form-control" aria-label="keterangan transaksi">
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <button type="submit" class="submit btn btn-block">Tambah</button>
+    </div>
+  </form>
+</div>
+`;
+
 const createTableTemplate = (listku) => `
 <tr>
   <td>${listku.id}</td>
   <td>${listku.tgl_transaksi}</td>
   <td>Rp ${listku.pemasukan}</td>
   <td>Rp ${listku.pengeluaran}</td>
-  <td>Rp 100000</td>
+  <td>Rp ${listku.pemasukan - listku.pengeluaran} </td>
   <td>${listku.keterangan}</td>
   <td>
-      <button onclick="goDoSomething(${listku.id});" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+    <button id="transaksiku" value="${listku.id}" class="btn btn-danger "><i class="fa fa-trash"></i></button>
   </td>
-</tr>`;
-
-const createNoteTemplate = () =>`
-<div class="sticky-notes">
-    <button class="add-notes" type="button">+</button>
-</div>
-<p>Catatan: Klik 2x untuk menghapus note</p>
-`;
-
-const createFormRegisterTemplate = () => `
-<div class="card-body">
-    <h4 class="title text-center mt-5">Registrasi Akun</h4>
-    <form class="form-box px-3">
-        <div class="form-input">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input
-            type="email"
-            name="email"
-            id="inputName"
-            placeholder="Email"
-            required
-        />
-        </div>
-        <div class="form-input">
-        <span><i class="fa fa-key"></i></span>
-        <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
-        </div>
-        <div class="form-input">
-        <span><i class="fa fa-key"></i></span>
-        <input
-            type="password"
-            name="confirmPassword"
-            id="inputConfirm"
-            placeholder="Ulangi Password"
-            required
-        />
-        </div>
-
-        <div class="mb-3">
-        <button type="submit" class="submit btn btn-block">Daftar</button>
-        </div>
-
-        <div class="text-center mb-2">
-        Sudah memiliki akun?
-        <a
-            href="/"
-            class="link"
-            aria-label="klik di sini jika kamu telah memiliki akun"
-            >Masuk</a
-        >
-        </div>
-    </form>
-</div>`;
-
-
-const createFormLoginTemplate = () => `
-<div class="card-body">
-    <h4 class="title text-center mt-5" tabindex="0">
-      Selamat datang di BooKu!
-    </h4>
-
-    <form  class="form-box px-3 ">
-      <div class="form-input">
-        <span><i class="fa fa-user-o"></i></span>
-        <input
-          type="email"
-          name="email"
-          id="inputEmail"
-          placeholder="Email"
-          required
-        />
-      </div>
-      <div class="form-input">
-        <span><i class="fa fa-key"></i></span>
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        />
-      </div>
-
-      <div class="mb-3">
-        <button type="submit" class="btn btn-block">Masuk</button>
-      </div>
-
-      <div class="text-center">
-        Belum memiliki akun? 
-        <a
-          href="register.html"
-          class="link"
-          aria-label="klik di sini jika kamu belum memiliki akun"
-          >Daftar</a
-        >
-      </div>
-    </form>
-</div>
+</tr>      
 `;
 
 export {
@@ -241,4 +324,5 @@ export {
   createNoteTemplate,
   createFormRegisterTemplate,
   createFormLoginTemplate,
+  createFormTransaksiTemplate,
 };

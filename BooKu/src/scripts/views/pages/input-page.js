@@ -1,9 +1,20 @@
 /* eslint-disable linebreak-style */
-import { createInputTemplate, createTableTemplate }
-  from '../templates/template-creator';
-import TransaksiDB from '../../data/transaksidb';
+import LoginDb from '../../data/logindb';
+import TransaksiDb from '../../data/transaksidb';
 import jsPDF from 'jspdf';
 import'jspdf-autotable';
+import { createTableTemplate } from '../templates/template-creator';
+import FormReviewInitiator from '../../utils/form-transaksi';
+
+const convertRupiah = require('rupiah-format')
+
+let pemasukan = localStorage.getItem("p1")
+let pengeluaran = localStorage.getItem("p2")
+let total = localStorage.getItem("total")
+
+let RpPemasukan = convertRupiah.convert(pemasukan)
+let RpPengeluaran = convertRupiah.convert(pengeluaran)
+let RpTotal = convertRupiah.convert(total)
 
 const InputPage = {
   async render() {
@@ -30,13 +41,13 @@ const InputPage = {
                     <th>Hapus</th>
                 </tr>
             </thead>
-            <tbody class="data-transaksi">
+            <tbody class="dataTransaksi">
             </tbody>
             <tfoot>
                 <td colspan="2"><b>Jumlah</b></td>
-                <td>Rp 400000</td>
-                <td>Rp 200000</td>
-                <td>Rp 200000</td>
+                <td>`+RpPemasukan+`</td>
+                <td>`+RpPengeluaran+`</td>
+                <td>`+RpTotal+`</td>
                 <td></td>
                 <td></td>
             </tfoot>
@@ -46,10 +57,6 @@ const InputPage = {
   },
 
   async afterRender() {
-    const inputContainer = document.querySelector('#inputContent');
-    inputContainer.innerHTML = createInputTemplate();
-    // inputContainer.innerHTML += createInputTemplate() + createTableTemplate();
-
     const pdf = document.querySelector('#pdf');
     pdf.addEventListener('click', (e) => {
       e.preventDefault();
@@ -58,17 +65,31 @@ const InputPage = {
         doc.save('laporan.pdf');
     });
 
-    // const url = UrlParser.parseActiveUrlWithoutCombiner();
-    const dataTransaksi = document.querySelector('.data-transaksi');
+    const TransaksiContainer = document.querySelector('.dataTransaksi');
 
-    const lists = await TransaksiDB.listTransaksi();
-    lists.forEach((list) => {
-      dataTransaksi.innerHTML += createTableTemplate(list);
+    const transaksi = await TransaksiDb.listRestaurant();
+    transaksi.forEach((dataTransaksi) => {
+      TransaksiContainer.innerHTML += createTableTemplate(dataTransaksi);
     });
 
-    // const data = await RestaurantDbSource.detailRestaurant('rqdv5juczeskfw1e867');
-    // restaurantContainer.innerHTML = createRestaurantDetailTemplate(data.restaurant);
-  },
+    const data = await LoginDb.detailRestaurant('rqdv5juczeskfw1e867');
+
+    await FormReviewInitiator.init({
+      formReviewContainer: document.querySelector('#formReviewContainer'),
+      id: data.restaurant.id,
+    });
+
+    const buttonDelete = document.querySelectorAll("#transaksi");
+    buttonDelete.forEach((button) => {
+      button.addEventListener('click', () => {
+        TransaksiDb.deleteTransaksi(button.value);
+
+        console.log(localStorage.getItem("token"),localStorage.getItem("email_user"),localStorage.getItem("id_user"),localStorage.getItem("auth"),'INI BAGIAN HOME');
+        alert('Berhasil Menghapus Transaksi');
+        location.reload();
+      });
+    });
+  }
 };
 
 export default InputPage;

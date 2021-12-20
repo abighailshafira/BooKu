@@ -20,7 +20,23 @@ class LoginDb {
       },
       body: JSON.stringify(review),
     });
-    return response;
+    
+    if (response.status == 200) {
+      alert('Login Berhasil');
+      response.json().then(data => {
+        localStorage.setItem("auth", 1);
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("email_user", data.user.email);
+        localStorage.setItem("id_user", data.user.id);
+        return data;
+      });
+
+      window.location.assign("http://localhost:8080/#/home")
+      location.reload();
+    } else{
+      alert('Email atau Password tidak sesuai');
+      return response.status;
+    }
   }
 }
 

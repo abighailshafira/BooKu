@@ -20,14 +20,15 @@ class RegisterDb {
       },
       body: JSON.stringify(review),
     });
+
     console.log(response.status);
+    
     if (response.status == 201) {
       window.location.assign("http://localhost:8080/")
-      alert('REGISTER BERHASIL!!!');
-    } else{
-      alert('EMAIL DAN PASSORD TIDAK SESUAI DENGAN DATABASE');
+      alert('Registrasi Berhasil');
+    }else{
+      alert('Registrasi Gagal');
     }
-    console.log('INI RESPON SAYA harusnya jadi status ', response.status);
 
     return response.status;
   }
