@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable no-alert */
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-tabs */
@@ -31,35 +32,19 @@ const FormRegister = {
       };
 
       if (inputName.value === '') {
-        alert('please input your email');
+        alert('Masukan email');
       } else if (inputReview.value === '') {
-        alert('please input your password');
+        alert('Masukan password');
       } else if (inputConfirm.value === '') {
-        alert('please input your confirm password');
+        alert('Masukan konfirmasi password');
       } else if (inputConfirm.value != inputReview.value) {
-        alert('please input your password and confirm password Tidak sama!');
+        alert('Masukan password dan konfirmasi password tidak sama!');
       } else {
-        await RegisterDb.reviewRestaurant(data);
+        await RegisterDb.storeRegister(data);
         form.reset();
-        // this._renderReview(data.email, data.password, data.csrf);
       }
     });
   },
-
-  // _renderReview(name, review) {
-  //   const reviewContainer = document.querySelector('.reviews');
-  //   const date = new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
-    
-  //   const dataReview = `
-  //   <div class="review-item">
-  //     <h4 class="review_name"><i class="fa fa-user" aria-hidden="true"></i> ${name} </h4>
-  //     <p class="review_date">${date}</p>
-  //     <p class="review_desc">${review}</p>
-  //   </div>`;
-  //   console.log(dataReview,'inipunya aku');
-
-  //   // reviewContainer.innerHTML += dataReview;
-  // },
 };
 
 export default FormRegister;

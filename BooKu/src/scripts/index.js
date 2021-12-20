@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
@@ -16,15 +17,15 @@ const app = new App({
   content: document.querySelector('#mainContent'),
 });
 
-const buttonDelete = document.querySelectorAll("#myLogout");
+const buttonDelete = document.querySelectorAll('#myLogout');
 buttonDelete.forEach((button) => {
   button.addEventListener('click', () => {
-    localStorage.removeItem("auth");
-    localStorage.removeItem("token");
-    localStorage.removeItem("email_user");
-    localStorage.removeItem("id_user");
+    localStorage.removeItem('auth');
+    localStorage.removeItem('token');
+    localStorage.removeItem('email_user');
+    localStorage.removeItem('id_user');
     alert('Berhasil Logout');
-    window.location.assign("http://localhost:8080/")
+    window.location.assign('http://localhost:8080/');
   });
 });
 

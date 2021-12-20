@@ -51,7 +51,7 @@ const NotePage = {
       });
 
       element.addEventListener('dblclick', () => {
-        const toDetele = confirm('Kamu yakin ingin menghapus note ini ?');
+        const toDetele = confirm('Kamu yakin ingin menghapus note ini?');
 
         if (toDetele) {
           deleteNote(id, element);

@@ -1,3 +1,6 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-console */
+/* eslint-disable no-alert */
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class RegisterDb {
@@ -7,12 +10,7 @@ class RegisterDb {
     return responseJson.restaurants;
   }
 
-  static async detailRestaurant(id) {
-    const response = await fetch(API_ENDPOINT.DETAIL_RESTAURANT(id));
-    return response.json();
-  }
-
-  static async reviewRestaurant(review) {
+  static async storeRegister(review) {
     const response = await fetch(API_ENDPOINT.REGISTER, {
       method: 'POST',
       headers: {
@@ -22,11 +20,11 @@ class RegisterDb {
     });
 
     console.log(response.status);
-    
+
     if (response.status == 201) {
-      window.location.assign("http://localhost:8080/")
+      window.location.assign('http://localhost:8080/');
       alert('Registrasi Berhasil');
-    }else{
+    } else {
       alert('Registrasi Gagal');
     }
 

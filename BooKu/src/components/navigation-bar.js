@@ -4,13 +4,13 @@ class NavigationBar extends HTMLElement {
   }
 
   render() {
-    if(localStorage.getItem("auth") === "1"){
+    if (localStorage.getItem('auth') === '1') {
       this.innerHTML = `
       <div class="main">
         <div class="navigation-bar">
           <div class="user">
             <a></a>
-            <p>`+localStorage.getItem("email_user")+`</p>
+            <p>${localStorage.getItem('email_user')}</p>
           </div>
         </div>
       </div>

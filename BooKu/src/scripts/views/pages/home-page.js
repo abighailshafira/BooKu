@@ -1,14 +1,15 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-empty-function */
 /* eslint-disable import/extensions */
-const convertRupiah = require('rupiah-format')
+const convertRupiah = require('rupiah-format');
 
-let pemasukan = localStorage.getItem("p1")
-let pengeluaran = localStorage.getItem("p2")
-let total = localStorage.getItem("total")
+const pemasukan = localStorage.getItem('p1');
+const pengeluaran = localStorage.getItem('p2');
+const total = localStorage.getItem('total');
 
-let RpPemasukan = convertRupiah.convert(pemasukan)
-let RpPengeluaran = convertRupiah.convert(pengeluaran)
-let RpTotal = convertRupiah.convert(total)
+const RpPemasukan = convertRupiah.convert(pemasukan);
+const RpPengeluaran = convertRupiah.convert(pengeluaran);
+const RpTotal = convertRupiah.convert(total);
 
 const HomePage = {
   async render() {
@@ -25,7 +26,7 @@ const HomePage = {
                 <div class="card-body">
                     <div>
                         <h5 tabindex="0">Pemasukan</h5>
-                        <h4 tabindex="0"><b>`+RpPemasukan+`</b></h4>
+                        <h4 tabindex="0"><b>${RpPemasukan}</b></h4>
                     </div>
                 </div>
                 <div class="card-footer py-3">
@@ -36,7 +37,7 @@ const HomePage = {
                 <div class="card-body">
                     <div>
                         <h5 tabindex="0">Pengeluaran</h5>
-                        <h4 tabindex="0"><b>`+RpPengeluaran+`</b></h4>
+                        <h4 tabindex="0"><b>${RpPengeluaran}</b></h4>
                     </div>
                 </div>
                 <div class="card-footer py-3">
@@ -47,7 +48,7 @@ const HomePage = {
                 <div class="card-body">
                     <div>
                         <h5 tabindex="0">Total</h5>
-                        <h4 tabindex="0"><b>`+RpTotal+`</b></h4>
+                        <h4 tabindex="0"><b>${RpTotal}</b></h4>
                     </div>
                 </div>
                 <div class="card-footer py-3">

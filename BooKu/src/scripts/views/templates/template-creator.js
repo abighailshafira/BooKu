@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 const createNoteTemplate = () => `
 <div class="sticky-notes">
    <button class="add-notes" type="button">+</button>
@@ -161,7 +162,7 @@ const createTableTemplate = (listku) => `
   <td>${listku.tgl_transaksi}</td>
   <td>${convertRupiah.convert(listku.pemasukan)}</td>
   <td>${convertRupiah.convert(listku.pengeluaran)}</td>
-  <td>${convertRupiah.convert(listku.pemasukan - listku.pengeluaran) } </td>
+  <td>${convertRupiah.convert(listku.pemasukan - listku.pengeluaran)} </td>
   <td>${listku.keterangan}</td>
   <td class="text-center">
     <button id="transaksi" value="${listku.id}" class="btn btn-danger "><i class="fa fa-trash"></i></button>

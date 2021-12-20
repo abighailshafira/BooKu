@@ -28,11 +28,11 @@ const FormLogin = {
       };
 
       if (inputName.value === '') {
-        alert('please input your name');
+        alert('Masukan email');
       } else if (inputReview.value === '') {
-        alert('please input your password');
+        alert('Masukan password');
       } else {
-        await LoginDb.reviewRestaurant(data);
+        await LoginDb.storeLogin(data);
         form.reset();
       }
     });

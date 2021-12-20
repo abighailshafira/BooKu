@@ -4,7 +4,7 @@ class SideBar extends HTMLElement {
   }
 
   render() {
-    if(localStorage.getItem("auth") === "1"){
+    if (localStorage.getItem('auth') === '1') {
       this.innerHTML = `
       <input
         type="checkbox"

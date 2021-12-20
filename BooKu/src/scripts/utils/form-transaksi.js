@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable no-alert */
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-tabs */
@@ -14,9 +15,9 @@ const FormTransaksiInitiator = {
 
   async _renderForm() {
     this._formTransaksiContainer.innerHTML = createFormTransaksiTemplate();
-    if(localStorage.getItem("auth") != "1"){
-      window.location.assign("http://localhost:8080/#/")
-      alert('anda belum login')
+    if (localStorage.getItem('auth') != '1') {
+      window.location.assign('http://localhost:8080/#/');
+      alert('Anda belum login');
     }
 
     const button = document.querySelector('.submit');
@@ -29,11 +30,11 @@ const FormTransaksiInitiator = {
       const inputKeterangan = document.querySelector('#inputKeterangan');
       const form = document.querySelector('form');
       const data = {
-        tgl_transaksi: tanggal.getFullYear() + '-' +tanggal.getMonth() + '-' + tanggal.getDate(),
+        tgl_transaksi: `${tanggal.getFullYear()}-${tanggal.getMonth()}-${tanggal.getDate()}`,
         pemasukan: inputPemasukan.value,
         pengeluaran: inputPengeluaran.value,
         keterangan: inputKeterangan.value,
-        user_id: localStorage.getItem("id_user"),
+        user_id: localStorage.getItem('id_user'),
         csrf: 'CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz',
       };
 
@@ -43,10 +44,9 @@ const FormTransaksiInitiator = {
         alert('Masukan total pemasukan');
       } else if (inputKeterangan.value === '') {
         alert('Masukan keterangan transaksi');
-      }  else {
-        await TransaksiDb.reviewRestaurant(data);
+      } else {
+        await TransaksiDb.storeTransaksi(data);
         form.reset();
-        // this._renderReview(data.email, data.password, data.csrf);
       }
     });
   },

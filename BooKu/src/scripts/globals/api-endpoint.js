@@ -7,7 +7,7 @@ const API_ENDPOINT = {
   DELETE_TRANSAKSI: (id) => `${CONFIG.BASE_URL}/delete/transaksi/${id}`,
   CHART: (id) => `${CONFIG.BASE_URL}/chart/transaksi/${id}`,
   LIST_TRANSAKSI: `${CONFIG.BASE_URL}/list/transaksi`,
-  LIST_RESTAURANT: `https://restaurant-api.dicoding.dev/list`,
+  LIST_RESTAURANT: 'https://restaurant-api.dicoding.dev/list',
   DETAIL_RESTAURANT: (id) => `https://restaurant-api.dicoding.dev/detail/${id}`,
 };
 

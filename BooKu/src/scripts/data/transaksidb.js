@@ -1,3 +1,6 @@
+/* eslint-disable no-alert */
+/* eslint-disable no-restricted-globals */
+/* eslint-disable eqeqeq */
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class TransaksiDb {
@@ -12,17 +15,12 @@ class TransaksiDb {
     return response.json();
   }
 
-  static async detailRestaurant(id) {
-    const response = await fetch(API_ENDPOINT.DETAIL_RESTAURANT(id));
-    return response.json();
-  }
-
-  static async deleteTransaksi(id){
+  static async deleteTransaksi(id) {
     const response = await fetch(API_ENDPOINT.DELETE_TRANSAKSI(id));
     return response.json();
   }
 
-  static async reviewRestaurant(review) {
+  static async storeTransaksi(review) {
     const response = await fetch(API_ENDPOINT.TRANSAKSI, {
       method: 'POST',
       headers: {
@@ -31,12 +29,10 @@ class TransaksiDb {
       body: JSON.stringify(review),
     });
 
-    // console.log(response.status);
-    
     if (response.status == 201) {
-      alert('Data Transaksi Berhasil Ditambahkan');
+      // alert('Data Transaksi Berhasil Ditambahkan');
       location.reload();
-    } else{
+    } else {
       alert('Data Transaksi Gagal Ditambahkan');
     }
 

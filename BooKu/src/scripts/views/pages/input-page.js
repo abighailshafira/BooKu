@@ -1,20 +1,22 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-restricted-globals */
+/* eslint-disable new-cap */
+import jsPDF from 'jspdf';
 import LoginDb from '../../data/logindb';
 import TransaksiDb from '../../data/transaksidb';
-import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import { createTableTemplate } from '../templates/template-creator';
 import FormTransaksiInitiator from '../../utils/form-transaksi';
 
-const convertRupiah = require('rupiah-format')
+const convertRupiah = require('rupiah-format');
 
-let pemasukan = localStorage.getItem("p1")
-let pengeluaran = localStorage.getItem("p2")
-let total = localStorage.getItem("total")
+const pemasukan = localStorage.getItem('p1');
+const pengeluaran = localStorage.getItem('p2');
+const total = localStorage.getItem('total');
 
-let RpPemasukan = convertRupiah.convert(pemasukan)
-let RpPengeluaran = convertRupiah.convert(pengeluaran)
-let RpTotal = convertRupiah.convert(total)
+const RpPemasukan = convertRupiah.convert(pemasukan);
+const RpPengeluaran = convertRupiah.convert(pengeluaran);
+const RpTotal = convertRupiah.convert(total);
 
 const InputPage = {
   async render() {
@@ -47,9 +49,9 @@ const InputPage = {
             </tbody>
             <tfoot>
                 <td colspan="2"><b>Jumlah</b></td>
-                <td>`+RpPemasukan+`</td>
-                <td>`+RpPengeluaran+`</td>
-                <td>`+RpTotal+`</td>
+                <td>${RpPemasukan}</td>
+                <td>${RpPengeluaran}</td>
+                <td>${RpTotal}</td>
                 <td></td>
                 <td></td>
             </tfoot>
@@ -62,9 +64,9 @@ const InputPage = {
     const pdf = document.querySelector('#pdf');
     pdf.addEventListener('click', (e) => {
       e.preventDefault();
-        const doc = new jsPDF()
-        doc.autoTable({html: '#example'})
-        doc.save('laporan.pdf');
+      const doc = new jsPDF();
+      doc.autoTable({ html: '#example' });
+      doc.save('laporan.pdf');
     });
 
     const TransaksiContainer = document.querySelector('.dataTransaksi');
@@ -81,15 +83,15 @@ const InputPage = {
       id: data.restaurant.id,
     });
 
-    const buttonDelete = document.querySelectorAll("#transaksi");
+    const buttonDelete = document.querySelectorAll('#transaksi');
     buttonDelete.forEach((button) => {
       button.addEventListener('click', () => {
         TransaksiDb.deleteTransaksi(button.value);
-        alert('Berhasil Menghapus Transaksi');
+        alert('Berhasil menghapus transaksi');
         location.reload();
       });
     });
-  }
+  },
 };
 
 export default InputPage;
