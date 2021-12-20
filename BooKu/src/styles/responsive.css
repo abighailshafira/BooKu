@@ -22,9 +22,8 @@
         font-size: 20px;
     }
 
-    .main,
-    footer {
-        margin-left: 70px;
+    .content{
+        margin-left: 20px;
     }
 
     .user{
@@ -158,5 +157,9 @@
 
     .table-title h3{
         font-size: 18px;
+    }
+
+    .user p{
+        display: none;
     }
 }

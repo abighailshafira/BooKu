@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
-// import { createHomeTemplate } from '../templates/template-creator.js';
-
 const convertRupiah = require('rupiah-format')
 
 let pemasukan = localStorage.getItem("p1")

@@ -8,121 +8,113 @@ const createNoteTemplate = () => `
 `;
 
 const createFormRegisterTemplate = () => `
-<header>
-  <div class="navbar">
-    <a class="navbar-brand">B<span>oo</span>Ku</a>
-  </div>
-</header>
+<div class="navbar">
+  <a class="navbar-brand">B<span>oo</span>Ku</a>
+</div>
 
-<main>
-  <div class="form-container">
-    <div class="container">
-      <div class="row px-3">
-        <div class="card col-lg-10 col-xl-9 flex-row mx-auto px-0">
-          <div class="img-left d-none d-md-flex"></div>
-          
-          <div class="card-body">
-            <h4 class="title text-center mt-5">Registrasi Akun</h4>
-            <form class="form-box px-3">
-              <div class="form-input">
-                <span><i class="fa fa-envelope-o"></i></span>
-                <input
-                    type="email"
-                    name="email"
-                    id="inputName"
-                    placeholder="Email"
-                    required
-                />
-              </div>
+<div class="form-container">
+  <div class="container">
+    <div class="row px-3">
+      <div class="card col-lg-10 col-xl-9 flex-row mx-auto px-0">
+        <div class="img-left d-none d-md-flex"></div>
+        
+        <div class="card-body">
+          <h4 class="title text-center mt-5">Registrasi Akun</h4>
+          <form class="form-box px-3">
+            <div class="form-input">
+              <span><i class="fa fa-envelope-o"></i></span>
+              <input
+                  type="email"
+                  name="email"
+                  id="inputName"
+                  placeholder="Email"
+                  required
+              />
+            </div>
 
-              <div class="form-input">
-                <span><i class="fa fa-key"></i></span>
-                <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
-              </div>
+            <div class="form-input">
+              <span><i class="fa fa-key"></i></span>
+              <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
+            </div>
 
-              <div class="form-input">
-                <span><i class="fa fa-key"></i></span>
-                <input
-                    type="password"
-                    name="confirmPassword"
-                    id="inputConfirm"
-                    placeholder="Ulangi Password"
-                    required
-                />
-              </div>
+            <div class="form-input">
+              <span><i class="fa fa-key"></i></span>
+              <input
+                  type="password"
+                  name="confirmPassword"
+                  id="inputConfirm"
+                  placeholder="Ulangi Password"
+                  required
+              />
+            </div>
 
-              <div class="mb-3">
-                <button type="submit" class="submit btn btn-block">Daftar</button>
-              </div>
+            <div class="mb-3">
+              <button type="submit" class="submit btn btn-block">Daftar</button>
+            </div>
 
-              <div class="text-center mb-2">
-                Sudah memiliki akun?
-                <a
-                    href="/"
-                    class="link"
-                    aria-label="klik di sini jika kamu telah memiliki akun"
-                    >Masuk</a
-                >
-              </div>
-            </form>
-          </div>
+            <div class="text-center mb-2">
+              Sudah memiliki akun?
+              <a
+                  href="/"
+                  class="link"
+                  aria-label="klik di sini jika kamu telah memiliki akun"
+                  >Masuk</a
+              >
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
-</main>
+</div>
 `;
 
 const createFormLoginTemplate = () => `
-<header>
-  <div class="navbar">
-    <a class="navbar-brand">B<span>oo</span>Ku</a>
-  </div>
-</header>
+<div class="navbar">
+  <a class="navbar-brand">B<span>oo</span>Ku</a>
+</div>
 
-<main>
-  <div class="form-container">
-    <div class="container">
-      <div class="row px-3">
-        <div class="card col-lg-10 col-xl-9 flex-row mx-auto px-0">
-          <div class="img-left d-none d-md-flex"></div>
+<div class="form-container">
+  <div class="container">
+    <div class="row px-3">
+      <div class="card col-lg-10 col-xl-9 flex-row mx-auto px-0">
+        <div class="img-left d-none d-md-flex"></div>
 
-          <div class="card-body">
-            <h4 class="title text-center mt-5" tabindex="0">
-              Selamat datang di BooKu!
-            </h4>
+        <div class="card-body">
+          <h4 class="title text-center mt-5" tabindex="0">
+            Selamat datang di BooKu!
+          </h4>
 
-            <form class="form-box px-3" action="/#/home">
-              <div class="form-input">
-                <span><i class="fa fa-envelope-o"></i></span>
-                <input type="text" name="name" id="inputName" placeholder="email">
-              </div>
+          <form class="form-box px-3" action="/#/home">
+            <div class="form-input">
+              <span><i class="fa fa-envelope-o"></i></span>
+              <input type="text" name="name" id="inputName" placeholder="Email">
+            </div>
 
-              <div class="form-input">
-                <span><i class="fa fa-key"></i></span>
-                <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
-              </div>
+            <div class="form-input">
+              <span><i class="fa fa-key"></i></span>
+              <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
+            </div>
 
-              <div class="mb-3">
-                <button type="submit" class="submit btn btn-block">Masuk</button>
-              </div>
+            <div class="mb-3">
+              <button type="submit" class="submit btn btn-block">Masuk</button>
+            </div>
 
-              <div class="text-center">
-                Belum memiliki akun? 
-                <a
-                  href="/#/register"
-                  class="link"
-                  aria-label="klik di sini jika kamu belum memiliki akun"
-                  >Daftar</a
-                >
-              </div>
-            </form>
-          </div>
+            <div class="text-center">
+              Belum memiliki akun? 
+              <a
+                href="/#/register"
+                class="link"
+                aria-label="klik di sini jika kamu belum memiliki akun"
+                >Daftar</a
+              >
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
-</main>
+</div>
 `;
 
 const createFormTransaksiTemplate = () => `

@@ -56,7 +56,7 @@ body{
 }
 
 .form-container{
-  height: 85vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,6 +130,7 @@ button[type="submit"]{
   min-height: 44px;
   min-width: 44px;
   font-size: 12px;
+  width: 100%;
 }
 
 button[type="submit"]:hover{
@@ -320,6 +321,11 @@ button[type="submit"]:hover{
 .home-content {
   overflow-x: hidden;
   background: var(--main-color);
+  margin-top: 30px;
+}
+
+.home-title{
+  margin-top: 15px;
 }
 
 .wrapper{
@@ -371,8 +377,7 @@ button[type="submit"]:hover{
   padding: 1.5rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
   border-radius: 10px;
-  width: 100%;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 1.5rem auto;
 }
 
 .input-container input{

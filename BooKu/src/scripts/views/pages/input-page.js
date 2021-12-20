@@ -28,7 +28,7 @@ const InputPage = {
 
       <div class="table-wrapper table-responsive">
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button id="pdf" class="btn btn-warning me-md-2">Export Laporan</button>
+            <button id="pdf" class="btn btn-warning me-md-2 export-button">Export Laporan</button>
         </div>
         
         <table id="example" class="table table-striped table-hover ">

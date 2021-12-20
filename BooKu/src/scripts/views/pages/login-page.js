@@ -1,5 +1,4 @@
 import LoginDb from '../../data/logindb';
-// import { createFormLoginTemplate } from '../templates/template-creator.js';
 import FormLogin from '../../utils/form-login';
 
 const LoginPage = {
