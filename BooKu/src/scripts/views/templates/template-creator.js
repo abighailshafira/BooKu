@@ -35,7 +35,7 @@ const createFormRegisterTemplate = () => `
 
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
+              <input type="password" name="password" id="inputPassword" placeholder="Password" aria-label="input Password">
             </div>
 
             <div class="form-input">
@@ -94,7 +94,7 @@ const createFormLoginTemplate = () => `
 
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="review" id="inputReview" placeholder="Password" aria-label="input Password">
+              <input type="password" name="password" id="inputPassword" placeholder="Password" aria-label="input Password">
             </div>
 
             <div class="mb-3">

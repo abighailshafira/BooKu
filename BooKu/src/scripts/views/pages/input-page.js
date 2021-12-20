@@ -2,7 +2,6 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable new-cap */
 import jsPDF from 'jspdf';
-import LoginDb from '../../data/logindb';
 import TransaksiDb from '../../data/transaksidb';
 import 'jspdf-autotable';
 import { createTableTemplate } from '../templates/template-creator';
@@ -71,16 +70,14 @@ const InputPage = {
 
     const TransaksiContainer = document.querySelector('.dataTransaksi');
 
-    const transaksi = await TransaksiDb.listRestaurant();
+    const transaksi = await TransaksiDb.listTransaksi();
+    
     transaksi.forEach((listku) => {
       TransaksiContainer.innerHTML += createTableTemplate(listku);
     });
 
-    const data = await LoginDb.detailRestaurant('rqdv5juczeskfw1e867');
-
     await FormTransaksiInitiator.init({
       formTransaksiContainer: document.querySelector('#formTransaksiContainer'),
-      id: data.restaurant.id,
     });
 
     const buttonDelete = document.querySelectorAll('#transaksi');

@@ -4,7 +4,7 @@
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class TransaksiDb {
-  static async listRestaurant() {
+  static async listTransaksi() {
     const response = await fetch(API_ENDPOINT.LIST_TRANSAKSI);
     const responseJson = await response.json();
     return responseJson.data;
@@ -20,13 +20,13 @@ class TransaksiDb {
     return response.json();
   }
 
-  static async storeTransaksi(review) {
+  static async storeTransaksi(transaksiData) {
     const response = await fetch(API_ENDPOINT.TRANSAKSI, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(review),
+      body: JSON.stringify(transaksiData),
     });
 
     if (response.status == 201) {

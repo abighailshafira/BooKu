@@ -4,19 +4,13 @@
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class RegisterDb {
-  static async listRestaurant() {
-    const response = await fetch(API_ENDPOINT.LIST_RESTAURANT);
-    const responseJson = await response.json();
-    return responseJson.restaurants;
-  }
-
-  static async storeRegister(review) {
+  static async storeRegister(registerData) {
     const response = await fetch(API_ENDPOINT.REGISTER, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(review),
+      body: JSON.stringify(registerData),
     });
 
     console.log(response.status);

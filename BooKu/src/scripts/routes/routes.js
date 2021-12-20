@@ -12,7 +12,6 @@ const routes = {
   '/home': HomePage,
   '/inputpage': InputPage,
   '/notepage': NotePage,
-  '/detail/:id': LoginPage,
 };
 
 export default routes;
