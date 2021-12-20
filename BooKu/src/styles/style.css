@@ -262,7 +262,7 @@ button[type="submit"]:hover{
   margin-left: 70px;
 }
 
-#sidebar-toggle:checked ~ .main navigation-bar {
+#sidebar-toggle:checked ~ .main .navigation-bar {
   left: 70px;
 }
 
@@ -273,11 +273,11 @@ button[type="submit"]:hover{
   transition: margin-left 300ms;
 }
 
-#mainContent{
-  /*margin-left: 240px;*/
+.content{
+  margin-left: 240px;
 }
 
-.main navigation-bar{
+.main .navigation-bar{
   position: sticky;
   top: 0;
   /*z-index: 100;*/

@@ -4,7 +4,7 @@ import TransaksiDb from '../../data/transaksidb';
 import jsPDF from 'jspdf';
 import'jspdf-autotable';
 import { createTableTemplate } from '../templates/template-creator';
-import FormReviewInitiator from '../../utils/form-transaksi';
+import FormTransaksiInitiator from '../../utils/form-transaksi';
 
 const convertRupiah = require('rupiah-format')
 
@@ -20,15 +20,17 @@ const InputPage = {
   async render() {
     return `
     <div class="content">
-      <div class="input-content" id="inputContent"></div>
+      <div class="input-content" id="formTransaksiContainer"></div>
 
       <div class="table-title">
         <h3 tabindex="0">Transaksi Pemasukan dan Pengeluaran</h3>
       </div>
+
       <div class="table-wrapper table-responsive">
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <button id="pdf" class="btn btn-warning me-md-2">Export Laporan</button>
         </div>
+        
         <table id="example" class="table table-striped table-hover ">
             <thead>
                 <tr>
@@ -74,8 +76,8 @@ const InputPage = {
 
     const data = await LoginDb.detailRestaurant('rqdv5juczeskfw1e867');
 
-    await FormReviewInitiator.init({
-      formReviewContainer: document.querySelector('#formReviewContainer'),
+    await FormTransaksiInitiator.init({
+      formTransaksiContainer: document.querySelector('#formTransaksiContainer'),
       id: data.restaurant.id,
     });
 
