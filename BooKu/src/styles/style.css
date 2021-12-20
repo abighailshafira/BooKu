@@ -424,19 +424,18 @@ h3{
 }
 
 /* content note page */
-.note-title{
-  padding: 16px;
-  margin-left: 1rem;
+.note-title {
+  padding: 16px 0px;
 }
 .sticky-notes {
-  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  padding: 26px;
+  grid-template-columns: repeat(auto-fill, 235px);
+  padding-bottom: 26px;
   gap: 2rem;
+  text-decoration: none;
 }
 .notes{
-  height: 200px;
+  height: 235px;
   box-sizing: border-box;
   padding: 16px;
   border-radius: 10px;
@@ -448,7 +447,7 @@ h3{
   background-color: rgb(192, 192, 192)
 }
 .add-notes{
-  height: 200px;
+  height: 235px;
   border: none;
   border-radius: 10px;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);

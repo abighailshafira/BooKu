@@ -143,11 +143,13 @@ const createInputTemplate = () => `
 //   </td>
 // </tr>`;
 
-const createNoteTemplate = () =>`
+const createNoteTemplate = () => `
 <div class="sticky-notes">
-  <button class="add-notes" type="button">+</button>
+   <button class="add-notes" type="button">+</button>
 </div>
-<p>Catatan: Klik 2x untuk menghapus note</p>
+<div class="footer-note">
+   <p><strong>Catatan:</strong> Klik 2x untuk menghapus note</p>
+</div>
 `;
 
 const createFormRegisterTemplate = () => `
