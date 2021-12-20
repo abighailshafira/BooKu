@@ -18,7 +18,6 @@ class App {
     this._content.innerHTML = await page.render();
     await page.afterRender();
 
-    /* reder page data chart */
     const canvasElement = document.getElementById('ChartTotal');
     const ChartTotal = new Chart(canvasElement, configChart);
   }
