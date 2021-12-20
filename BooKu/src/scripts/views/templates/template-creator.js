@@ -172,7 +172,7 @@ const createTableTemplate = (dataTransaksi) => `
   <td>${convertRupiah.convert(dataTransaksi.pemasukan - dataTransaksi.pengeluaran) } </td>
   <td>${dataTransaksi.keterangan}</td>
   <td class="text-center">
-      <button id="transaksiku" value="${dataTransaksi.id}" class="btn btn-danger "><i class="fa fa-trash"></i></button>
+    <button id="transaksi" value="${dataTransaksi.id}" class="btn btn-danger "><i class="fa fa-trash"></i></button>
   </td>
 </tr>      
 `;

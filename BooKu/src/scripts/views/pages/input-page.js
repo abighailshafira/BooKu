@@ -85,8 +85,6 @@ const InputPage = {
     buttonDelete.forEach((button) => {
       button.addEventListener('click', () => {
         TransaksiDb.deleteTransaksi(button.value);
-
-        console.log(localStorage.getItem("token"),localStorage.getItem("email_user"),localStorage.getItem("id_user"),localStorage.getItem("auth"),'INI BAGIAN HOME');
         alert('Berhasil Menghapus Transaksi');
         location.reload();
       });
