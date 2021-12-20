@@ -38,6 +38,7 @@
     "jspdf": "^2.4.0",
     "jspdf-autotable": "^3.5.23",
     "regenerator-runtime": "^0.13.5",
+    "rupiah-format": "^1.0.0",
     "serviceworker-webpack-plugin": "^1.0.1"
   }
 }
