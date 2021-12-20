@@ -5,7 +5,7 @@ const API_ENDPOINT = {
   REGISTER: `${CONFIG.BASE_URL}/register`,
   TRANSAKSI: `${CONFIG.BASE_URL}/transaksi`,
   DELETE_TRANSAKSI: (id) => `${CONFIG.BASE_URL}/delete/transaksi/${id}`,
-  CHART: (id)  => `${CONFIG.BASE_URL}/chart/transaksi/${id}`,
+  CHART: (id) => `${CONFIG.BASE_URL}/chart/transaksi/${id}`,
   LIST_TRANSAKSI: `${CONFIG.BASE_URL}/list/transaksi`,
 
   // IMAGE_RESTAURANT: `https://restaurant-api.dicoding.dev/images/medium`,

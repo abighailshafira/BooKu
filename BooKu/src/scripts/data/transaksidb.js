@@ -31,7 +31,7 @@ class TransaksiDb {
       body: JSON.stringify(review),
     });
 
-    console.log(response.status);
+    // console.log(response.status);
     
     if (response.status == 201) {
       alert('Data Transaksi Berhasil Ditambahkan');

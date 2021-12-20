@@ -163,16 +163,16 @@ const createFormTransaksiTemplate = () => `
 let no = 1;
 const convertRupiah = require('rupiah-format');
 
-const createTableTemplate = (dataTransaksi) => `
+const createTableTemplate = (listku) => `
 <tr>
   <td class="text-center">${no++}</td>
-  <td>${dataTransaksi.tgl_transaksi}</td>
-  <td>${convertRupiah.convert(dataTransaksi.pemasukan)}</td>
-  <td>${convertRupiah.convert(dataTransaksi.pengeluaran)}</td>
-  <td>${convertRupiah.convert(dataTransaksi.pemasukan - dataTransaksi.pengeluaran) } </td>
-  <td>${dataTransaksi.keterangan}</td>
+  <td>${listku.tgl_transaksi}</td>
+  <td>${convertRupiah.convert(listku.pemasukan)}</td>
+  <td>${convertRupiah.convert(listku.pengeluaran)}</td>
+  <td>${convertRupiah.convert(listku.pemasukan - listku.pengeluaran) } </td>
+  <td>${listku.keterangan}</td>
   <td class="text-center">
-    <button id="transaksi" value="${dataTransaksi.id}" class="btn btn-danger "><i class="fa fa-trash"></i></button>
+    <button id="transaksi" value="${listku.id}" class="btn btn-danger "><i class="fa fa-trash"></i></button>
   </td>
 </tr>      
 `;

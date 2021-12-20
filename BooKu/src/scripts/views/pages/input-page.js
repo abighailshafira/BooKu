@@ -2,7 +2,7 @@
 import LoginDb from '../../data/logindb';
 import TransaksiDb from '../../data/transaksidb';
 import jsPDF from 'jspdf';
-import'jspdf-autotable';
+import 'jspdf-autotable';
 import { createTableTemplate } from '../templates/template-creator';
 import FormTransaksiInitiator from '../../utils/form-transaksi';
 
@@ -70,8 +70,8 @@ const InputPage = {
     const TransaksiContainer = document.querySelector('.dataTransaksi');
 
     const transaksi = await TransaksiDb.listRestaurant();
-    transaksi.forEach((dataTransaksi) => {
-      TransaksiContainer.innerHTML += createTableTemplate(dataTransaksi);
+    transaksi.forEach((listku) => {
+      TransaksiContainer.innerHTML += createTableTemplate(listku);
     });
 
     const data = await LoginDb.detailRestaurant('rqdv5juczeskfw1e867');

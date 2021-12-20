@@ -1,6 +1,6 @@
 import TransaksiDb from '../data/transaksidb';
 
-const convertRupiah = require('rupiah-format')
+const convertRupiah = require('rupiah-format');
 
 const charts = TransaksiDb.chart(1);
 console.log(charts);

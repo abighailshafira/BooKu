@@ -31,7 +31,7 @@ const HomePage = {
                     </div>
                 </div>
                 <div class="card-footer py-3">
-                    <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
+                    <a href="#/inputpage">Lihat semua<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="card card-pengeluaran" >
@@ -42,7 +42,7 @@ const HomePage = {
                     </div>
                 </div>
                 <div class="card-footer py-3">
-                    <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
+                    <a href="#/inputpage">Lihat semua<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="card card-total">
@@ -53,7 +53,7 @@ const HomePage = {
                     </div>
                 </div>
                 <div class="card-footer py-3">
-                    <a href="">Lihat semua<i class="fa fa-angle-right"></i></a>
+                    <a href="#/inputpage">Lihat semua<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
