@@ -10,7 +10,7 @@
 ![PHP](https://img.shields.io/static/v1?message=PHP&logo=php&labelColor=5c5c5c&color=1182c3&label=%20)
 ![Laravel](https://img.shields.io/static/v1?message=Laravel&logo=laravel&labelColor=5c5c5c&color=1182c3&label=%20)
 
-BooKu merupakan aplikasi pencatatan keuangan yang dirancang untuk pelaku Usaha Mikro Kecil Menengah (UMKM). Pengembangan aplikasi ini memudahkan dalam melakukan pencatatan keuangan serta memberikan keuntungan dari segi keamanan, keakuratan data, dan waktu yang efisien, karena sebagian besar pelaku usaha masih melakukan pencatatan transaksi secara manual menggunakan buku. Hal tersebut dapat menimbulkan terjadinya berbagai kesalahan, seperti kesalahan berhitung dan risiko kehilangan data akibat penyimpanan yang kurang baik. Aplikasi ini memiliki fitur untuk pencatatan transaksi serta pembuatan laporan keuangan, sehingga memudahkan dalam memonitor dan mengatur keuangan. 
+BooKu merupakan aplikasi pencatatan keuangan yang dirancang untuk pelaku Usaha Mikro Kecil Menengah (UMKM). Pengembangan aplikasi ini bertujuan untuk memudahkan dalam melakukan pencatatan keuangan serta memberikan keuntungan dari segi keamanan, keakuratan data, dan waktu yang efisien, karena sebagian besar pelaku usaha masih melakukan pencatatan transaksi secara manual menggunakan buku. Hal tersebut dapat menimbulkan terjadinya berbagai kesalahan, seperti kesalahan berhitung dan risiko kehilangan data akibat penyimpanan yang kurang baik. Aplikasi ini memiliki fitur untuk pencatatan transaksi serta pembuatan laporan keuangan, sehingga memudahkan dalam memonitor dan mengatur keuangan. 
 
 ## Getting Started
 ```
@@ -33,4 +33,4 @@ npm run start-dev
 
 ## Team
 * [ Abighail Shafira Ihsani ] [https://github.com/abighailshafira](https://github.com/abighailshafira)
-* [ Achmad Aqrom Roid Naufal Hais ] [https://github.com/AARNH](https://github.com/AARNH)
+* [ Achmad Aqrom Roid Naufil Hais ] [https://github.com/AARNH](https://github.com/AARNH)
