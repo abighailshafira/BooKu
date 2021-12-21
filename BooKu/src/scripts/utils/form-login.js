@@ -13,7 +13,7 @@ const FormLogin = {
 
   async _renderForm() {
     this._formLoginContainer.innerHTML = createFormLoginTemplate();
-    
+
     const button = document.querySelector('.submit');
     button.addEventListener('click', async (e) => {
       e.preventDefault();

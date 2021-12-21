@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-alert */
 /* eslint-disable no-restricted-globals */
 /* eslint-disable new-cap */
 import jsPDF from 'jspdf';
@@ -71,7 +72,7 @@ const InputPage = {
     const TransaksiContainer = document.querySelector('.dataTransaksi');
 
     const transaksi = await TransaksiDb.listTransaksi();
-    
+
     transaksi.forEach((listku) => {
       TransaksiContainer.innerHTML += createTableTemplate(listku);
     });

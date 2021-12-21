@@ -15,7 +15,7 @@ const FormTransaksiInitiator = {
 
   async _renderForm() {
     this._formTransaksiContainer.innerHTML = createFormTransaksiTemplate();
-    
+
     if (localStorage.getItem('auth') != '1') {
       window.location.assign('http://localhost:8080/#/');
       alert('Anda belum login');

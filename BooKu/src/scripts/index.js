@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import '../components/navigation-bar.js';
-import '../components/skip-to-content.js';
 import '../components/side-bar.js';
 import App from './views/app.js';
 import swRegister from './utils/sw-register';
