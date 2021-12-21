@@ -1,4 +1,4 @@
-<p align="center"><a href="https://drajathost.masuk.id/" target="_blank"><img src="https://raw.githubusercontent.com/abighailshafira/BooKu/main/src/public/BooKu.png" width="200"></a></p>
+<p align="center"><a target="_blank"><img src="https://raw.githubusercontent.com/abighailshafira/BooKu/main/src/public/BooKu.png" width="200"></a></p>
 
 ![html](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=5c5c5c&color=1182c3&label=%20) 
 ![javascript](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=5c5c5c&color=1182c3&label=%20)
