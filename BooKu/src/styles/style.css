@@ -20,7 +20,7 @@ body{
   --hover-color:rgba(255, 255, 255, 0.418);
 }
 
-.skip-link {
+/*.skip-link {
   position: fixed;
   top: -100px;
   left: 10px;
@@ -39,7 +39,7 @@ body{
   top: 20px;
   color: white;
 }
-
+*/
 .navbar-brand{
 	color: black;
 	margin: 10px;
@@ -56,7 +56,7 @@ body{
 }
 
 .form-container{
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,24 +150,6 @@ button[type="submit"]:hover{
   text-decoration: none;
 }
 
-.profile{
-  text-align: center;
-  margin-top: .5em;
-}
-
-.profile-image{
-  border-radius: 50%;
-  height: 150px;
-}
-
-.form-profile-container{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 /*side-bar*/
 .sidebar {
   height: 100%;
@@ -259,13 +241,13 @@ button[type="submit"]:hover{
   padding: 6px;
 }
 
-#sidebar-toggle:checked ~ .main {
+/*#sidebar-toggle:checked ~ .main {
   margin-left: 70px;
 }
 
 #sidebar-toggle:checked ~ .main .navigation-bar {
   left: 70px;
-}
+}*/
 
 /*main-content*/
 .main {
@@ -275,7 +257,8 @@ button[type="submit"]:hover{
 }
 
 .content{
-  margin-left: 240px;
+  margin-left: 80px;
+  /*margin-left: 240px;*/
 }
 
 .main .navigation-bar{
@@ -317,11 +300,11 @@ button[type="submit"]:hover{
   min-height: 90vh;
 }
 
-/* content Home Page*/
+/*content home-page*/
 .home-content {
   overflow-x: hidden;
   background: var(--main-color);
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 }
 
 .home-title{
@@ -367,11 +350,7 @@ button[type="submit"]:hover{
   padding: 5px;
 }
 
-/* content Input Page*/
-.input-content{
-  padding: 1rem;
-}
-
+/* content input-page*/
 .input-container{
   background-color: white;
   padding: 1.5rem;
@@ -428,17 +407,20 @@ h3{
   text-align: center;
 }
 
-/* content note page */
+/*content note-page*/
 .note-title {
   padding: 16px 0px;
 }
+
 .sticky-notes {
   display: grid;
   grid-template-columns: repeat(auto-fill, 235px);
   padding-bottom: 26px;
   gap: 2rem;
   text-decoration: none;
+  justify-content: center;
 }
+
 .notes{
   height: 235px;
   box-sizing: border-box;
@@ -449,8 +431,9 @@ h3{
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   font-size: 16px;
   outline: none;
-  background-color: rgb(192, 192, 192)
+  background-color: rgb(192, 192, 192);
 }
+
 .add-notes{
   height: 235px;
   border: none;
@@ -462,6 +445,7 @@ h3{
   color: rgb(192, 192, 192);
   transition: background 0.3s;
 }
+
 .add-notes:hover{
   background-color: rgb(192, 192, 192);
   color: white;
@@ -485,19 +469,4 @@ h3{
   min-height: 44px;
   min-width: 44px;
   font-size: 14px;
-}
-
-footer{
-  background-color: white;
-  padding: 10px;
-  text-align: center;
-  font-size: 12px;
-  display: block;
-  bottom: 0;
-  margin-left: 240px;
-  font-weight: bold;
-}
-
-#sidebar-toggle:checked ~ footer {
-  margin-left: 70px;
 }

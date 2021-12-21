@@ -23,7 +23,7 @@
     }
 
     .content{
-        margin-left: 20px;
+        margin-left: 70px;
     }
 
     .user{
@@ -93,6 +93,14 @@
     .table-title h3{
         font-size: 20px;
     }
+
+    .table-wrapper{
+        margin: 15px;
+    }
+
+    .note-title, .footer-note {
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -129,17 +137,7 @@
         padding-left: 0px;
     }
 
-    #sidebar-toggle:checked ~ .main,
-    #sidebar-toggle:checked ~ footer {
-        margin-left: 55px;
-    }
-
-    #sidebar-toggle:checked ~ .main navigation-bar{
-        left: 55px;
-    }
-
-    .main,
-    footer {
+    .content {
         margin-left: 55px;
     }
 
@@ -147,6 +145,10 @@
         font-size: 12px;
     }
     
+    .card-body {
+        padding: 1rem;
+    }
+
     .card-body h5{
         font-size: 15px;
     }
@@ -161,5 +163,30 @@
 
     .user p{
         display: none;
+    }
+
+    .sticky-notes{
+        gap: 13px;
+    }
+
+    .note-title, .footer-note {
+        margin-left: 15px;
+    }
+
+    .input-content{
+        margin-top: 10px;
+    }
+
+    .input-container{
+        padding: 1rem;
+    }
+
+    .table-wrapper{
+        padding: 1rem;
+        margin: 10px;
+    }
+
+    .table-title{
+        padding-bottom: 0.5rem;
     }
 }
