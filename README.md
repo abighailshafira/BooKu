@@ -30,7 +30,20 @@ npm run start-dev
 * Eksport laporan dalam bentuk PDF
 * Menulis catatan kecil dalam bentuk sticky notes
 
-## Resource
+##Resource
+
+### Library 
+- [jquery](https://api.jquery.com/)
+- [Chart js](https://www.chartjs.org/)
+- [Webpack](https://webpack.js.org/concepts/)
+
+### Paper Link
+- [https://ejurnal.ung.ac.id/index.php/diffusion/article/download/7853/2484](https://ejurnal.ung.ac.id/index.php/diffusion/article/download/7853/2484)
+
+### Refrence Link
+- [https://www.kjaatik.id/blogumkm-2/](https://www.kjaatik.id/blogumkm-2/)
+- [https://datatables.net/examples/styling/bootstrap5.html](https://datatables.net/examples/styling/bootstrap5.html)
+
 
 ## Team
 * [ Abighail Shafira Ihsani ] [https://github.com/abighailshafira](https://github.com/abighailshafira)
