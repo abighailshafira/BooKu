@@ -14,6 +14,14 @@
 BooKu merupakan aplikasi pencatatan keuangan yang dirancang untuk pelaku Usaha Mikro Kecil Menengah (UMKM). Pengembangan aplikasi ini bertujuan untuk memudahkan dalam melakukan pencatatan keuangan serta memberikan keuntungan dari segi keamanan, keakuratan data, dan waktu yang efisien, karena sebagian besar pelaku usaha masih melakukan pencatatan transaksi secara manual menggunakan buku. Hal tersebut dapat menimbulkan terjadinya berbagai kesalahan, seperti kesalahan berhitung dan risiko kehilangan data akibat penyimpanan yang kurang baik. Aplikasi ini memiliki fitur untuk pencatatan transaksi serta pembuatan laporan keuangan, sehingga memudahkan dalam memonitor dan mengatur keuangan. 
 
 ## Getting Started
+1. Buka XAMPP lalu start Apache dan MySQL
+2. Clone repository (https://github.com/abighailshafira/BooKu-Backend)
+3. Buka terminal, jalankan perintah :
+```
+php artisan serve
+```
+4. Clone repository (https://github.com/abighailshafira/BooKu)
+5. Buka terminal, jalankan perintah :
 ```
 npm install
 npm run build
@@ -30,10 +38,14 @@ npm run start-dev
 * Eksport laporan dalam bentuk PDF
 * Menulis catatan kecil dalam bentuk sticky notes
 
+## Dummy Account
+Email : Dicoding@gmail.com  
+Password : 12341234
+
 ## Resource
 
 ### Library 
-- [jquery](https://api.jquery.com/)
+- [jQuery](https://api.jquery.com/)
 - [Chart js](https://www.chartjs.org/)
 - [Webpack](https://webpack.js.org/concepts/)
 
@@ -45,7 +57,7 @@ npm run start-dev
 - [https://datatables.net/examples/styling/bootstrap5.html](https://datatables.net/examples/styling/bootstrap5.html)
 
 ### Gambar
-- [freepik](https://www.freepik.com/free-vector/businessman-character-avatar-isolated_6769264.htm#query=icon%20profile&position=1&from_view=search)
+- [Freepik](https://www.freepik.com/free-vector/businessman-character-avatar-isolated_6769264.htm#query=icon%20profile&position=1&from_view=search)
 - [Favicon](https://www.freepik.com/free-icon/presentation_14611180.htm#page=1&query=financial&position=21&from_view=search)
 
 
