@@ -32,17 +32,22 @@ npm run start-dev
 
 ## Resource
 
-  ### Library 
-  - [jquery](https://api.jquery.com/)
-  - [Chart js](https://www.chartjs.org/)
-  - [Webpack](https://webpack.js.org/concepts/)
+### Library 
+- [jquery](https://api.jquery.com/)
+- [Chart js](https://www.chartjs.org/)
+- [Webpack](https://webpack.js.org/concepts/)
 
-  ### Paper Link
-  - [https://ejurnal.ung.ac.id/index.php/diffusion/article/download/7853/2484](https://ejurnal.ung.ac.id/index.php/diffusion/article/download/7853/2484)
+### Paper Link
+- [https://ejurnal.ung.ac.id/index.php/diffusion/article/download/7853/2484](https://ejurnal.ung.ac.id/index.php/diffusion/article/download/7853/2484)
 
-  ### Refrence Link
-  - [https://www.kjaatik.id/blogumkm-2/](https://www.kjaatik.id/blogumkm-2/)
-  - [https://datatables.net/examples/styling/bootstrap5.html](https://datatables.net/examples/styling/bootstrap5.html)
+### Refrence Link
+- [https://www.kjaatik.id/blogumkm-2/](https://www.kjaatik.id/blogumkm-2/)
+- [https://datatables.net/examples/styling/bootstrap5.html](https://datatables.net/examples/styling/bootstrap5.html)
+
+### Gambar
+- [freepik](https://www.freepik.com/free-vector/businessman-character-avatar-isolated_6769264.htm#query=icon%20profile&position=1&from_view=search)
+- [Favicon](https://www.freepik.com/free-icon/presentation_14611180.htm#page=1&query=financial&position=21&from_view=search)
+
 
 
 ## Team
