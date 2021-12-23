@@ -39,7 +39,7 @@ npm run start-dev
 * Menulis catatan kecil dalam bentuk sticky notes
 
 ## Dummy Account
-Email : Dicoding@gmail.com  
+Email : dicoding@gmail.com  
 Password : 12341234
 
 ## Resource
